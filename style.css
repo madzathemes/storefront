@@ -1883,7 +1883,7 @@ a {
      background-image: url('assets/images/currency-flags.png');
      background-repeat: no-repeat;
      display: block;
-     margin: 4px 8px 0 0;
+     margin: 1px 8px 0 0;
      float: left;
 		 width: 30px;
 		 height: 20px;
@@ -1925,6 +1925,5 @@ a {
 	border-radius: 5px;
 }
 .wmc-current-currency .flags {
-	margin-top: 1px;
 	margin-right: 6px;
 }
