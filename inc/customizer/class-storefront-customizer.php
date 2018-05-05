@@ -43,18 +43,7 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 		 */
 		public static function get_storefront_default_setting_values() {
 			return apply_filters( 'storefront_setting_default_values', $args = array(
-				'storefront_heading_color'               => '#333333',
-				'storefront_text_color'                  => '#6d6d6d',
-				'storefront_accent_color'                => '#96588a',
-				'storefront_header_background_color'     => '#ffffff',
-				'storefront_header_text_color'           => '#404040',
-				'storefront_header_link_color'           => '#333333',
-				'storefront_button_background_color'     => '#eeeeee',
-				'storefront_button_text_color'           => '#333333',
-				'storefront_button_alt_background_color' => '#333333',
-				'storefront_button_alt_text_color'       => '#ffffff',
-				'storefront_layout'                      => 'right',
-				'background_color'                       => 'ffffff',
+
 			) );
 		}
 
@@ -276,7 +265,7 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 				'priority' 				=> 30,
 			) ) );
 
-		
+
 
 			/**
 			 * Buttons section
