@@ -393,16 +393,6 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 		public function get_storefront_theme_mods() {
 			$storefront_theme_mods = array(
 				'background_color'            => storefront_get_content_background_color(),
-				'accent_color'                => get_theme_mod( 'storefront_accent_color' ),
-				'header_background_color'     => get_theme_mod( 'storefront_header_background_color' ),
-				'header_link_color'           => get_theme_mod( 'storefront_header_link_color' ),
-				'header_text_color'           => get_theme_mod( 'storefront_header_text_color' ),
-				'text_color'                  => get_theme_mod( 'storefront_text_color' ),
-				'heading_color'               => get_theme_mod( 'storefront_heading_color' ),
-				'button_background_color'     => get_theme_mod( 'storefront_button_background_color' ),
-				'button_text_color'           => get_theme_mod( 'storefront_button_text_color' ),
-				'button_alt_background_color' => get_theme_mod( 'storefront_button_alt_background_color' ),
-				'button_alt_text_color'       => get_theme_mod( 'storefront_button_alt_text_color' ),
 			);
 
 			return apply_filters( 'storefront_theme_mods', $storefront_theme_mods );
