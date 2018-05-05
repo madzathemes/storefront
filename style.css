@@ -341,10 +341,6 @@ body {
 	-webkit-tap-highlight-color:transparent
 }
 .site-header {
-	background-color:#2c2d33;
-	padding-top:1.618em;
-	padding-bottom:1.618em;
-	color:#9aa0a7;
 	background-position:center center;
 	position:relative;
 	z-index:999;
@@ -731,7 +727,7 @@ button,input,select,textarea {
 .added_to_cart,.button,button,input[type=button],input[type=reset],input[type=submit] {
 	border:0;
 	background:0 0;
-	background-color:#43454b;
+	background-color:#8BC34A;
 	border-color:#43454b;
 	color:#fff;
 	cursor:pointer;
@@ -1828,7 +1824,7 @@ a {
    }
  }
  .main-navigation ul li a:hover,
- .main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, a.cart-contents:hover, .site-header-cart .widget_shopping_cart a:hover, .site-header-cart:hover > li > a, .site-header ul.menu li.current-menu-item > a {
+ .main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, a.cart-contents:hover, .site-header-cart:hover > li > a, .site-header ul.menu li.current-menu-item > a {
      color: #ff93c5;
  }
  .woocommerce-breadcrumb a, a.woocommerce-review-link, .product_meta a, .woocommerce-breadcrumb {
@@ -1873,6 +1869,13 @@ a {
 .storefront-more-button,
 .storefront-smartmenu-button {
 	display: none;
+}
+.woocommerce-mini-cart__buttons .checkout {
+	background: #FF5722
+}
+.woocommerce-mini-cart__buttons a.button:hover {
+	color: white!imporant;
+	opacity: 0.9;
 }
 
  .woo-multi-currency.layout5 {
