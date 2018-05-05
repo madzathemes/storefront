@@ -504,19 +504,7 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			$darken_factor         = apply_filters( 'storefront_darken_factor', -25 );
 
 			$styles                = '
-			.main-navigation ul li a,
-			.site-title a,
-			.site-branding h1 a,
-			.site-footer .storefront-handheld-footer-bar a:not(.button),
-			button.menu-toggle,
-			button.menu-toggle:hover {
-				color: ' . $storefront_theme_mods['header_link_color'] . ';
-			}
 
-			button.menu-toggle,
-			button.menu-toggle:hover {
-				border-color: ' . $storefront_theme_mods['header_link_color'] . ';
-			}
 
 			table th {
 				background-color: ' . storefront_adjust_color_brightness( $storefront_theme_mods['background_color'], -7 ) . ';
