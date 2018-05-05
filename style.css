@@ -453,9 +453,6 @@ body {
 .site-footer a {
 	color:#969ba0
 }
-.site-info {
-	padding:2.617924em 0
-}
 .alignleft {
 	display:inline;
 	float:left;
@@ -745,7 +742,7 @@ button,input,select,textarea {
 	display:inline-block;
 	outline:0;
 	-webkit-appearance:none;
-	border-radius:0
+	border-radius:3px
 }
 .added_to_cart.alt,.added_to_cart.cta,.button.alt,.button.cta,button.alt,button.cta,input[type=button].alt,input[type=button].cta,input[type=reset].alt,input[type=reset].cta,input[type=submit].alt,input[type=submit].cta {
 	background-color:#2c2d33;
@@ -1124,7 +1121,7 @@ button.menu-toggle:after {
 	transform:rotateY(180deg)
 }
 .widget {
-	margin:0 0 3.706325903em
+	margin:0 0 40px;
 }
 .widget select {
 	max-width:100%
@@ -1368,8 +1365,7 @@ button.menu-toggle:after {
 		margin-right:0
 	}
 	.footer-widgets {
-		padding-top:4.235801032em;
-		border-bottom:1px solid rgba(0,0,0,.05)
+		padding-top:40px;
 	}
 	.footer-widgets:after,.footer-widgets:before {
 		content:"";
