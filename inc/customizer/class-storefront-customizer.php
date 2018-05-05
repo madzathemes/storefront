@@ -49,10 +49,6 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 				'storefront_header_background_color'     => '#ffffff',
 				'storefront_header_text_color'           => '#404040',
 				'storefront_header_link_color'           => '#333333',
-				'storefront_footer_background_color'     => '#f0f0f0',
-				'storefront_footer_heading_color'        => '#333333',
-				'storefront_footer_text_color'           => '#6d6d6d',
-				'storefront_footer_link_color'           => '#333333',
 				'storefront_button_background_color'     => '#eeeeee',
 				'storefront_button_text_color'           => '#333333',
 				'storefront_button_alt_background_color' => '#333333',
@@ -280,6 +276,8 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 				'priority' 				=> 30,
 			) ) );
 
+		
+
 			/**
 			 * Buttons section
 			 */
@@ -408,10 +406,6 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 				'header_background_color'     => get_theme_mod( 'storefront_header_background_color' ),
 				'header_link_color'           => get_theme_mod( 'storefront_header_link_color' ),
 				'header_text_color'           => get_theme_mod( 'storefront_header_text_color' ),
-				'footer_background_color'     => get_theme_mod( 'storefront_footer_background_color' ),
-				'footer_link_color'           => get_theme_mod( 'storefront_footer_link_color' ),
-				'footer_heading_color'        => get_theme_mod( 'storefront_footer_heading_color' ),
-				'footer_text_color'           => get_theme_mod( 'storefront_footer_text_color' ),
 				'text_color'                  => get_theme_mod( 'storefront_text_color' ),
 				'heading_color'               => get_theme_mod( 'storefront_heading_color' ),
 				'button_background_color'     => get_theme_mod( 'storefront_button_background_color' ),
