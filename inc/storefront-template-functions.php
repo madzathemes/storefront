@@ -127,12 +127,9 @@ if ( ! function_exists( 'storefront_credit' ) ) {
 			<div class="site-info footer-widgets row-1 col-2 fix">
 <div class="block footer-widget-1">
 			<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ) ) ); ?>
-			<?php if ( apply_filters( 'storefront_credit_link', true ) ) { ?>
-			<br /> <?php echo '<a href="https://woocommerce.com" target="_blank" title="' . esc_attr__( 'WooCommerce - The Best eCommerce Platform for WordPress', 'storefront' ) . '" rel="author">' . esc_html__( 'Built with Storefront &amp; WooCommerce', 'storefront' ) . '</a>' ?>
-			<?php } ?>
 </div>
 
-							<div class="block footer-widget-2">b</div>
+							<div class="block footer-widget-2 "><div class="paymentscardsimage"></div></div>
 		</div><!-- .site-info -->
 
 		<?php

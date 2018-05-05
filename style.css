@@ -1877,6 +1877,14 @@ a {
 	color: white!imporant;
 	opacity: 0.9;
 }
+.paymentscardsimage {
+	background-image: url("assets/images/paymentcards.png");
+	background-size: 346px 26px;
+	background-repeat: no-repeat;
+	width: 346px;
+	height: 26px;
+	float:right;
+}
 
  .woo-multi-currency.layout5 {
 	 float: right;
