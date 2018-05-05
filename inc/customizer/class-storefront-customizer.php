@@ -44,6 +44,8 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 		public static function get_storefront_default_setting_values() {
 			return apply_filters( 'storefront_setting_default_values', $args = array(
 
+				'storefront_layout'                      => 'right',
+				'background_color'                       => 'ffffff',
 			) );
 		}
 
