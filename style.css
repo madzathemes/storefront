@@ -444,14 +444,14 @@ body {
 }
 .site-footer {
 	background-color:#f3f3f3;
-	color:#76787e;
+	color:#969ba0;
 	padding:1.618em 0 3.706325903em
 }
 .site-footer h1,.site-footer h2,.site-footer h3,.site-footer h4,.site-footer h5,.site-footer h6 {
 	color:#65676d
 }
-.site-footer a:not(.button) {
-	color:#2c2d33
+.site-footer a {
+	color:#969ba0
 }
 .site-info {
 	padding:2.617924em 0
@@ -1188,7 +1188,7 @@ button.menu-toggle:after {
 }
 .widget_archive ul li,.widget_categories ul li,.widget_layered_nav ul li,.widget_layered_nav_filters ul li,.widget_links ul li,.widget_nav_menu ul li,.widget_pages ul li,.widget_product_categories ul li,.widget_recent_comments ul li,.widget_recent_entries ul li {
 	list-style:none;
-	margin-bottom:1em;
+	margin-bottom: 7px;
 	line-height:1.41575em
 }
 .widget_archive ul .children,.widget_categories ul .children,.widget_layered_nav ul .children,.widget_layered_nav_filters ul .children,.widget_links ul .children,.widget_nav_menu ul .children,.widget_pages ul .children,.widget_product_categories ul .children,.widget_recent_comments ul .children,.widget_recent_entries ul .children {
@@ -1608,7 +1608,7 @@ button.menu-toggle:after {
 		width:200px
 	}
 	ul.menu li.current-menu-item>a {
-		color:#43454b
+		color:#ff93c6
 	}
 	.storefront-primary-navigation {
 		clear:both;
@@ -1738,7 +1738,7 @@ a {
  }
  .site-footer {
      background-color: #f5f5f5;
-     color: #6c7378;
+     color: #969ba0;
  }
 
  a { outline : 0 !important; }

@@ -506,7 +506,6 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			$styles                = '
 			.main-navigation ul li a,
 			.site-title a,
-			ul.menu li a,
 			.site-branding h1 a,
 			.site-footer .storefront-handheld-footer-bar a:not(.button),
 			button.menu-toggle,
@@ -634,19 +633,6 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 
 			#comments .comment-list .comment-content .comment-text {
 				background-color: ' . storefront_adjust_color_brightness( $storefront_theme_mods['background_color'], -7 ) . ';
-			}
-
-			.site-footer {
-				background-color: ' . $storefront_theme_mods['footer_background_color'] . ';
-				color: ' . $storefront_theme_mods['footer_text_color'] . ';
-			}
-
-			.site-footer a:not(.button) {
-				color: ' . $storefront_theme_mods['footer_link_color'] . ';
-			}
-
-			.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
-				color: ' . $storefront_theme_mods['footer_heading_color'] . ';
 			}
 
 			#order_review {
