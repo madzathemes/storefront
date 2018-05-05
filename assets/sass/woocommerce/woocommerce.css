@@ -616,6 +616,9 @@ a.reset_variations {
 .product_list_widget a:hover {
 	color:#2c2d33;
 }
+.product_list_widget .quantity {
+	color: #b1b1b1;
+}
 .widget ul.products li.product a {
 	text-decoration:none;
 }
