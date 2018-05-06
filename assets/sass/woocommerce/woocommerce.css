@@ -1729,6 +1729,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	.storefront-full-width-content .woocommerce-products-header h1:last-child,.storefront-full-width-content.woocommerce-account .entry-header h1:last-child,.storefront-full-width-content.woocommerce-cart .entry-header h1:last-child,.storefront-full-width-content.woocommerce-checkout .entry-header h1:last-child {
 			margin-bottom:0;
 	}
+	.woocommerce-products-header {float:left;}
 	.storefront-full-width-content .related.products>h2:first-child,.storefront-full-width-content .up-sells>h2:first-child {
 			text-align:center;
 	}
@@ -1755,9 +1756,9 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			position:relative;
 	}
 	.woocommerce-ordering {
-			float:left;
+			float:right;
 			margin-bottom:0;
-			margin-right:1em;
+			margin-right:0;
 			padding:.327em 0;
 	}
 	.woocommerce-pagination {
