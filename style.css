@@ -1878,6 +1878,10 @@ a,
 .woocommerce-shipping-calculator{
 	display: none;
 }
+.card-variations {
+	font-size: 14px;
+	color: #b1b1b1;
+}
 .woocommerce-mini-cart__buttons .checkout {
 	background: #FF5722
 }

@@ -63,6 +63,16 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
 	}
 }
 
+
+function get_variation_data_from_variation_id( $item_id ) {
+    $_product = new WC_Product_Variation( $item_id );
+    $variation_data = $_product->get_variation_attributes();
+    $variation_detail = wc_get_formatted_variation( $variation_data, true );  // this will give all variation detail in one line
+    // $variation_detail = woocommerce_get_formatted_variation( $variation_data, false);  // this will give all variation detail one by one
+    return $variation_detail; // $variation_detail will return string containing variation detail which can be used to print on website
+    // return $variation_data; // $variation_data will return only the data which can be used to store variation data
+}
+
 /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
