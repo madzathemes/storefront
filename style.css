@@ -1964,6 +1964,11 @@ a,
 .wmc-current-currency .flags {
 	margin-right: 6px;
 }
+.wcppec-checkout-buttons__separator {
+    display: block;
+    opacity: .5;
+    margin: 0;
+}
 
 .woocommerce-cart .entry-content .woocommerce>form {
 	width: 63%;
