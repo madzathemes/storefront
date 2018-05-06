@@ -1889,6 +1889,17 @@ a {
  .woo-multi-currency.layout5 {
 	 float: right;
  }
+ .hot-button > a:after {
+	 content: "HOT";
+	 right:0px;
+	 font-size: 10px;
+	 background-color: #ff89be;
+	 color: white;
+	 border-radius: 20px;
+	 padding: 2px 5px 2px 5px;
+	 margin-left: 5px;
+	 font-weight: 400!important;
+ }
 
 .flags {
      background-image: url('assets/images/currency-flags.png');
