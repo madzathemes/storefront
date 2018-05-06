@@ -2678,10 +2678,10 @@ a.remove {
   .woocommerce-breadcrumb .breadcrumb-separator:after {
     display: block;
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 LiamDecoFonts;
     font-size: inherit;
     text-rendering: auto;
-    content: "\f105";
+    content: "\e906";
     font-size: 0.875em;
     text-indent: 0;
     position: absolute;
