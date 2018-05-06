@@ -1858,7 +1858,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	.woocommerce-cart-form__contents {
 		padding-top: 50px;
 	}
-	
+
 	table.cart td.actions {
 			text-align:right;
 			padding-top: 50px;
@@ -1929,7 +1929,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			float:right;
 			margin-right:0;
 			width:100%;
-			padding:40px;
+			padding: 40px 40px 0px;
 	}
 	#ship-to-different-address {
 			position:relative;
