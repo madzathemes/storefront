@@ -787,7 +787,7 @@ table.cart td.product-subtotal {
 }
 table.cart td.actions {
 	background-color:transparent;
-	border-top:1em solid;
+	border-top:1em solid white;
 	padding:0;
 }
 table.cart td.actions label {
