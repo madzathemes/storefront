@@ -2668,7 +2668,7 @@ a.remove {
     line-height: 1; }
 
 .woocommerce-pagination .next:after {
-  content: "\e906"; }
+  content: "\e906"; transform: rotate(180deg); }
 
 .woocommerce-breadcrumb .breadcrumb-separator {
   text-indent: -9999px;
