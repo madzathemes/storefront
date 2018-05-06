@@ -57,7 +57,7 @@ function iconic_modify_theme_support() {
     $theme_support = get_theme_support( 'woocommerce' );
     $theme_support = is_array( $theme_support ) ? $theme_support[0] : array();
 
-    unset( $theme_support['single_image_width'], $theme_support['thumbnail_image_width'] );
+    unset( $theme_support['single_image_width'] );
 
     remove_theme_support( 'woocommerce' );
     add_theme_support( 'woocommerce', $theme_support );
