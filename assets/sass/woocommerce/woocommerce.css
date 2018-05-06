@@ -1856,11 +1856,11 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			padding:.6180469716em;
 	}
 	.woocommerce-cart-form__contents {
-		padding-top: 60px;
+		padding-top: 50px;
 	}
 	table.cart td.actions {
 			text-align:right;
-			padding-top: 60px;
+			padding-top: 50px;
 	}
 
 	table.cart td.actions label {
