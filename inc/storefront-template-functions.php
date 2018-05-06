@@ -788,6 +788,8 @@ if ( ! function_exists( 'storefront_on_sale_products' ) ) {
 	}
 }
 
+
+
 if ( ! function_exists( 'storefront_best_selling_products' ) ) {
 	/**
 	 * Display Best Selling Products
@@ -968,7 +970,7 @@ add_action( 'template_redirect', 'custom_track_product_view', 20 );
 function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
     // Get shortcode parameters
     extract(shortcode_atts(array(
-        "per_page" => '5'
+        "per_page" => '4'
     ), $atts));
     // Get WooCommerce Global
     global $woocommerce;
@@ -980,15 +982,15 @@ function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
     // Create the object
     ob_start();
     // Get products per page
-    if( !isset( $per_page ) ? $number = 5 : $number = $per_page )
+    if( !isset( $per_page ) ? $number = 4 : $number = $per_page )
     // Create query arguments array
     $query_args = array(
                     'posts_per_page' => $number,
                     'no_found_rows'  => 1,
                     'post_status'    => 'publish',
+										'order'   => 'ASC',
                     'post_type'      => 'product',
-                    'post__in'       => $viewed_products,
-                    'orderby'        => 'rand'
+                    'post__in'       => $viewed_products
                     );
     // Add meta_query to query args
     $query_args['meta_query'] = array();
@@ -1006,8 +1008,9 @@ function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
  <li class="product liamrecent">
     <a class="product-picture" href="<?php echo get_post_permalink(); ?>" title="Show details for Watches">
         <img alt="Picture of Watches" src="<?php echo $url;?>" title="Show details for Watches" />
+				<h2><?php the_title()?></h2>
+				<span class="woocommerce-Price-amount amount"><?php global $product; echo $product->get_price_html(); ?></span>
     </a>
-<a class="product-name" href="<?php echo get_post_permalink(); ?>"><?php the_title()?></a>
 </li>
 <!-- end html loop  -->
 <?php endwhile; ?>
@@ -1024,3 +1027,53 @@ function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
 }
 // Register the shortcode
 add_shortcode("woocommerce_recently_viewed_products", "rc_woocommerce_recently_viewed_products");
+
+
+
+if ( ! function_exists( 'storefront_recent_viewed_products' ) ) {
+	/**
+	 * Display On Sale Products
+	 * Hooked into the `homepage` action in the homepage template
+	 *
+	 * @param array $args the product section args.
+	 * @since  1.0.0
+	 * @return void
+	 */
+	function storefront_recent_viewed_products( $args ) {
+
+		if ( storefront_is_woocommerce_activated() ) {
+
+			$args = apply_filters( 'storefront_on_sale_products_args', array(
+				'limit'   => 8,
+				'columns' => 4,
+				'title'   => __( 'Recent Viewed', 'storefront' ),
+			) );
+
+			$shortcode_content = storefront_do_shortcode( 'sale_products', apply_filters( 'storefront_on_sale_products_shortcode_args', array(
+				'per_page' => intval( $args['limit'] ),
+				'columns'  => intval( $args['columns'] ),
+			) ) );
+
+			/**
+			 * Only display the section if the shortcode returns products
+			 */
+			if ( false !== strpos( $shortcode_content, 'product' ) ) {
+
+				echo '<section class="related storefront-product-section storefront-on-sale-products" aria-label="' . esc_attr__( 'On Sale Products', 'storefront' ) . '">';
+
+				do_action( 'storefront_homepage_before_on_sale_products' );
+
+				echo '<h2>' . wp_kses_post( $args['title'] ) . '</h2>';
+
+				do_action( 'storefront_homepage_after_on_sale_products_title' );
+
+				echo do_shortcode('[woocommerce_recently_viewed_products]');
+
+				do_action( 'storefront_homepage_after_on_sale_products' );
+
+				echo '</section>';
+
+			}
+		}
+	}
+}

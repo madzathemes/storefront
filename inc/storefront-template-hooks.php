@@ -40,6 +40,8 @@ add_action( 'storefront_header', 'storefront_primary_navigation_wrapper_close', 
  * @see  storefront_footer_widgets()
  * @see  storefront_credit()
  */
+
+
 add_action( 'storefront_footer', 'storefront_footer_widgets', 10 );
 add_action( 'storefront_footer', 'storefront_credit',         20 );
 
@@ -94,6 +96,7 @@ add_action( 'storefront_post_content_before', 'storefront_post_thumbnail',      
  */
 add_action( 'storefront_page',       'storefront_page_header',          10 );
 add_action( 'storefront_page',       'storefront_page_content',         20 );
+add_action( 'storefront_page_after', 'storefront_recent_viewed_products', 22 );
 add_action( 'storefront_page_after', 'storefront_display_comments',     10 );
 
 add_action( 'storefront_homepage',       'storefront_homepage_header',      10 );

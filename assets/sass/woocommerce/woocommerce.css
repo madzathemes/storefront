@@ -1545,6 +1545,9 @@ dl.variation dd {
 			margin-right:4.347826087%;
 			width:21.7391304348%;
 	}
+ul.columns-4.products li.product.liamrecent:last-child {
+  margin-right:0;
+}
 	.page-template-template-fullwidth-php .site-main .columns-5 ul.products li.product,.page-template-template-homepage-php .site-main .columns-5 ul.products li.product,.storefront-full-width-content .site-main .columns-5 ul.products li.product {
 			margin-right:3.8%;
 			width:16.9%;
