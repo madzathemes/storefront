@@ -1872,7 +1872,8 @@ a,
  }
 .storefront-more-button {}
 .storefront-smartmenu-button,
-.storefront-product-section .add_to_cart_button {
+.storefront-product-section .add_to_cart_button,
+.products .add_to_cart_button{
 	display: none;
 }
 .woocommerce-mini-cart__buttons .checkout {
