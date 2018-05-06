@@ -772,6 +772,9 @@ table.cart td.product-remove:after,table.cart td.product-remove:before {
 .woocommerce-cart-form__contents .product-price {
 	color:#b1b1b1
 }
+.woocommerce-cart-form__contents .product-name {
+	padding-right: 20px;
+}
 .woocommerce-cart-form__contents .product-subtotal {
 	font-size: 18px;
 	font-weight: 600;
