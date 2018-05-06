@@ -449,6 +449,9 @@ body {
 .site-footer a {
 	color:#969ba0
 }
+.site-footer a:hover {
+	color:#ff93c6
+}
 .alignleft {
 	display:inline;
 	float:left;
@@ -1879,7 +1882,7 @@ a,
 	opacity: 0.9;
 }
 .paymentscardsimage {
-	background-image: url("assets/images/paymentcards.png");
+	background-image: url("assets/images/paymentcardsc.png");
 	background-size: 346px 26px;
 	background-repeat: no-repeat;
 	width: 346px;
