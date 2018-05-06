@@ -749,7 +749,7 @@ table.cart .product-quantity .minus,table.cart .product-quantity .plus {
 table.cart .product-thumbnail img {
 	height:auto;
 	margin:0 auto;
-	max-width:100%;
+	max-width:90%;
 }
 table.cart .product-thumbnail:before {
 	display:none;
