@@ -1763,7 +1763,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	.woocommerce-pagination {
 			border:0;
 			clear:none;
-			float:right;
+			float:left;
 			margin-bottom:0;
 			padding:0;
 	}
