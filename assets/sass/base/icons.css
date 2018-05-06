@@ -2682,7 +2682,7 @@ a.remove {
     font-size: inherit;
     text-rendering: auto;
     content: "\e906";
-    font-size: 0.875em;
+    font-size: 13px;
     text-indent: 0;
     position: absolute;
     top: 50%;
@@ -2693,7 +2693,7 @@ a.remove {
         -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
     text-align: center;
-    opacity: .25; }
+    opacity: .5; }
 
 #payment .payment_methods > .woocommerce-PaymentMethod > label:before,
 #payment .payment_methods > .wc_payment_method > label:before {
