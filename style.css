@@ -1900,6 +1900,9 @@ a,
  .woo-multi-currency.layout5 {
 	 float: right;
  }
+ .coupon .button {
+	 background: silver;
+ }
  .hot-button > a:after {
 	 content: "HOT";
 	 right:0px;
