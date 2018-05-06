@@ -783,9 +783,6 @@ table.cart td.product-quantity .qty {
 table.cart td,table.cart th {
 	padding:.875em .875em 0;
 }
-table.cart td.product-subtotal {
-	padding-bottom:.875em;
-}
 table.cart td.actions {
 	background-color:transparent;
 	border-top:1em solid white;
@@ -1814,7 +1811,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	}
 	.page-template-template-fullwidth-php table.cart .product-thumbnail {
 			display:table-cell;
-			width: 50px;
+			width: 120px;
 	}
 	.page-template-template-fullwidth-php table.cart thead {
 			font-size:1em;
