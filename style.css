@@ -1718,7 +1718,8 @@ button.menu-toggle:after {
 }
 
 
-a {
+a,
+.hot-button > a:after {
    -webkit-transition: all 100ms ease-out!important;
    -moz-transition: all 100ms ease-out!important;
    -ms-transition: all 100ms ease-out!important;
@@ -1902,7 +1903,9 @@ a {
 	 top:-1px;
 	 position: relative;
  }
-
+ .hot-button > a:hover:after{
+	 background: black
+ }
 .flags {
      background-image: url('assets/images/currency-flags.png');
      background-repeat: no-repeat;
