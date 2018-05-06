@@ -1449,7 +1449,6 @@ dl.variation dd {
     background: transparent;
     background-image: none;
     -webkit-appearance: none;
-		position: relative;
 		color: #b1b1b1;
 		font-size: 12px;
 		z-index: 2;
