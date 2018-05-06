@@ -766,7 +766,7 @@ table.cart td.product-remove:after,table.cart td.product-remove:before {
 	content:"";
 	display:table;
 }
-.woocommerce-cart-form__contents .product-name {
+.woocommerce-cart-form__contents thead .product-name {
 	display: none;
 }
 table.cart td.product-remove:after {
