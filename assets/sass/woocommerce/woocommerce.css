@@ -1415,13 +1415,47 @@ dl.variation dd {
 	.storefront-handheld-footer-bar {
 			display:none;
 	}
-	
+
 	.woocommerce-breadcrumb {
 			margin-bottom:20px;
 			margin-left:-99em;
 			margin-right:-99em;
 			padding:1.41575em 99em 1.41575em;
 	}
+	.woocommerce-ordering {
+    border: 0px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+		position: relative;
+    background: #f0f0f0;
+}
+.woocommerce-ordering::after{
+	content: '\e905';
+	font: normal normal normal 14px LiamDecoFonts;
+	top: 13px;
+	right: 13px;
+	position: absolute;
+	    color: #b1b1b1;
+	z-index: 1
+}
+
+.woocommerce-ordering select {
+    padding: 5px 20px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+		position: relative;
+		color: #b1b1b1;
+		font-size: 12px;
+		z-index: 2;
+}
+
+.woocommerce-ordering select:focus {
+    outline: none;
+}
 	table.shop_table_responsive thead {
 			display:table-header-group;
 	}
