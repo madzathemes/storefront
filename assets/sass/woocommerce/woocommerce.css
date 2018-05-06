@@ -1855,6 +1855,9 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	table.cart .quantity .qty {
 			padding:.6180469716em;
 	}
+	.woocommerce-cart-form__contents {
+		padding-top: 60px;
+	}
 	table.cart td.actions {
 			text-align:right;
 			padding-top: 60px;
