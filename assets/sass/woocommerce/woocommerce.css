@@ -833,7 +833,7 @@ table.cart td.actions input[name=update_cart]:focus {
 	text-align:center;
 }
 .wc-proceed-to-checkout .button.checkout-button {
-	font-size:1.41575em;
+	font-size:16px;
 }
 .woocommerce-shipping-calculator {
 	margin:0;
