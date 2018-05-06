@@ -1969,6 +1969,10 @@ a,
     opacity: .5;
     margin: 0;
 }
+.calculated_shipping .woocommerce-Price-amount {
+	font-size: 26px;
+	line-height: 1.1;
+}
 
 .woocommerce-cart .entry-content .woocommerce>form {
 	width: 63%;
