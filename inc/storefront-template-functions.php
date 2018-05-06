@@ -943,3 +943,85 @@ if ( ! function_exists( 'storefront_primary_navigation_wrapper_close' ) ) {
 		echo '</div>';
 	}
 }
+
+function custom_track_product_view() {
+    if ( ! is_singular( 'product' ) ) {
+        return;
+    }
+    global $post;
+    if ( empty( $_COOKIE['woocommerce_recently_viewed'] ) )
+        $viewed_products = array();
+    else
+        $viewed_products = (array) explode( '|', $_COOKIE['woocommerce_recently_viewed'] );
+    if ( ! in_array( $post->ID, $viewed_products ) ) {
+        $viewed_products[] = $post->ID;
+    }
+    if ( sizeof( $viewed_products ) > 15 ) {
+        array_shift( $viewed_products );
+    }
+    // Store for session only
+    wc_setcookie( 'woocommerce_recently_viewed', implode( '|', $viewed_products ) );
+}
+add_action( 'template_redirect', 'custom_track_product_view', 20 );
+
+
+function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
+    // Get shortcode parameters
+    extract(shortcode_atts(array(
+        "per_page" => '5'
+    ), $atts));
+    // Get WooCommerce Global
+    global $woocommerce;
+    // Get recently viewed product cookies data
+    $viewed_products = ! empty( $_COOKIE['woocommerce_recently_viewed'] ) ? (array) explode( '|', $_COOKIE['woocommerce_recently_viewed'] ) : array();
+    $viewed_products = array_filter( array_map( 'absint', $viewed_products ) );
+    // If no data, quit
+    if ( empty( $viewed_products ) )
+        return __( 'You have not viewed any product yet!', 'rc_wc_rvp' );
+    // Create the object
+    ob_start();
+    // Get products per page
+    if( !isset( $per_page ) ? $number = 5 : $number = $per_page )
+    // Create query arguments array
+    $query_args = array(
+                    'posts_per_page' => $number,
+                    'no_found_rows'  => 1,
+                    'post_status'    => 'publish',
+                    'post_type'      => 'product',
+                    'post__in'       => $viewed_products,
+                    'orderby'        => 'rand'
+                    );
+    // Add meta_query to query args
+    $query_args['meta_query'] = array();
+    // Check products stock status
+    $query_args['meta_query'][] = $woocommerce->query->stock_status_meta_query();
+    // Create a new query
+    $r = new WP_Query($query_args);
+    // ----
+    ?>
+ <?php global $post; while ( $r->have_posts() ) : $r->the_post();
+   $url= wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+   ?>
+
+   <!-- //put your theme html loop hare -->
+ <li class="product liamrecent">
+    <a class="product-picture" href="<?php echo get_post_permalink(); ?>" title="Show details for Watches">
+        <img alt="Picture of Watches" src="<?php echo $url;?>" title="Show details for Watches" />
+    </a>
+<a class="product-name" href="<?php echo get_post_permalink(); ?>"><?php the_title()?></a>
+</li>
+<!-- end html loop  -->
+<?php endwhile; ?>
+
+
+
+    <?php wp_reset_postdata();
+    return '<ul class="woocommerce products columns-4">' . ob_get_clean() . '</ul>';
+    // ----
+    // Get clean object
+    $content .= ob_get_clean();
+    // Return whole content
+    return $content;
+}
+// Register the shortcode
+add_shortcode("woocommerce_recently_viewed_products", "rc_woocommerce_recently_viewed_products");
