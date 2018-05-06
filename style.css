@@ -1852,7 +1852,8 @@ a,
    color: #ff89be;
  }
  .site-header .site-search,
- .wmc-currency {
+ .wmc-currency,
+ .product_thumbnail_background {
    -webkit-transition: all 200ms ease-out!important;
    -moz-transition: all 200ms ease-out!important;
    -ms-transition: all 200ms ease-out!important;
@@ -2032,4 +2033,21 @@ a,
     -webkit-background-size: 20px 20px;
     background-size: 20px 20px;
     background-position: 0 10px, 40px 40px;
+}
+.product_thumbnail_background {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	display: block;
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+  margin: 0 auto 1.618em;
+}
+.woocommerce-loop-product__link {
+	position: relative;
+}
+.woocommerce-loop-product__link:hover .product_thumbnail_background {
+    opacity: 1;
 }
