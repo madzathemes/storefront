@@ -1102,7 +1102,7 @@ button.menu-toggle:after {
 	color:#43454b
 }
 .pagination .page-numbers li .page-numbers.current,.woocommerce-pagination .page-numbers li .page-numbers.current {
-	background-color:#2c2d33;
+	background-color:white;
 	border-color:#2c2d33
 }
 .pagination .page-numbers li .page-numbers.dots,.woocommerce-pagination .page-numbers li .page-numbers.dots {
