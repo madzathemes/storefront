@@ -1416,7 +1416,7 @@ dl.variation dd {
 			display:none;
 	}
 	.woocommerce-breadcrumb {
-			margin-bottom:0px;
+			margin-bottom:10px;
 			margin-left:-99em;
 			margin-right:-99em;
 			padding:1.41575em 99em 1.41575em;
