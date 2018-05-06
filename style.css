@@ -1874,7 +1874,8 @@ a,
 .storefront-more-button {}
 .storefront-smartmenu-button,
 .storefront-product-section .add_to_cart_button,
-.products .add_to_cart_button{
+.products .add_to_cart_button,
+.woocommerce-shipping-calculator{
 	display: none;
 }
 .woocommerce-mini-cart__buttons .checkout {
