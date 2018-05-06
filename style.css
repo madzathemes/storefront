@@ -1969,7 +1969,7 @@ a,
     opacity: .5;
     margin: 0;
 }
-.calculated_shipping .woocommerce-Price-amount {
+.calculated_shipping .order-total .woocommerce-Price-amount {
 	font-size: 26px;
 	line-height: 1.1;
 }
