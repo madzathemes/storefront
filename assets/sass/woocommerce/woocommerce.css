@@ -1416,7 +1416,7 @@ dl.variation dd {
 			display:none;
 	}
 	.woocommerce-breadcrumb {
-			margin-bottom:4.235801032em;
+			margin-bottom:0px;
 			margin-left:-99em;
 			margin-right:-99em;
 			padding:1.41575em 99em 1.41575em;
@@ -1723,7 +1723,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			width:30.4347826087%;
 	}
 	.storefront-full-width-content .woocommerce-products-header,.storefront-full-width-content.woocommerce-account .entry-header,.storefront-full-width-content.woocommerce-cart .entry-header,.storefront-full-width-content.woocommerce-checkout .entry-header {
-			padding:0 0 5.9968353111em;
+			padding:0 0 0px;
 			text-align:left;
 	}
 	.storefront-full-width-content .woocommerce-products-header h1:last-child,.storefront-full-width-content.woocommerce-account .entry-header h1:last-child,.storefront-full-width-content.woocommerce-cart .entry-header h1:last-child,.storefront-full-width-content.woocommerce-checkout .entry-header h1:last-child {
