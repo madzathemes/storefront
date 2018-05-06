@@ -1435,6 +1435,11 @@ dl.variation dd {
 	    color: #b1b1b1;
 	z-index: 1
 }
+.woocommerce-ordering:hover::after,
+.woocommerce-ordering:hover select
+{
+	color: #ff93c5
+}
 
 .woocommerce-ordering select {
     padding: 5px 0px 5px 0px;
