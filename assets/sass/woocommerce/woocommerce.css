@@ -1454,6 +1454,7 @@ dl.variation dd {
 		font-size: 12px;
 		z-index: 2;
 		margin-right: 0px;
+		text-align: right;
 }
 
 .woocommerce-ordering select:focus {
