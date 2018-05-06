@@ -2665,10 +2665,10 @@ a.remove {
     -webkit-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
-    line-height: 1; transform: rotate(0deg);}
+    line-height: 1;}
 
 .woocommerce-pagination .next:after {
-  content: "\e906"; transform: rotate(180deg); }
+  content: "\e925"; }
 
 .woocommerce-breadcrumb .breadcrumb-separator {
   text-indent: -9999px;
