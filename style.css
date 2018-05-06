@@ -1962,12 +1962,12 @@ a,
 }
 
 .woocommerce-cart .entry-content .woocommerce>form {
-	width: 60%;
+	width: 63%;
   float: left;
   margin-bottom: 100px;
 }
 .woocommerce-cart .entry-content .woocommerce .cart-collaterals {
-    width: 35.8%;
+    width: 30.8%;
     float: right;
     padding: 0;
     margin-bottom: 40px;
