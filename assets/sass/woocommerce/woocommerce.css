@@ -1430,7 +1430,7 @@ dl.variation dd {
 	content: '\e905';
 	font: normal normal normal 14px LiamDecoFonts;
 	top: 13px;
-	right: 13px;
+	right: 0px;
 	position: absolute;
 	    color: #b1b1b1;
 	z-index: 1
@@ -1448,6 +1448,7 @@ dl.variation dd {
 		color: #b1b1b1;
 		font-size: 12px;
 		z-index: 2;
+		margin-right: -10px;
 }
 
 .woocommerce-ordering select:focus {
