@@ -2043,8 +2043,6 @@ a,
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	display: block;
-  margin: 0 auto 1.618em;
 }
 .woocommerce-loop-product__link {
 	position: relative;
