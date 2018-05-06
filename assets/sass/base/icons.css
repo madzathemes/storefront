@@ -2655,7 +2655,7 @@ a.remove {
     font: normal normal normal 14px/1 LiamDecoFonts;
     font-size: inherit;
     text-rendering: auto;
-    content: "\e906";
+    content: "\e925";
     text-indent: 0;
     position: absolute;
     top: 50%;
@@ -2668,7 +2668,7 @@ a.remove {
     line-height: 1;}
 
 .woocommerce-pagination .next:after {
-  content: "\e925"; }
+  content: "\e906"; }
 
 .woocommerce-breadcrumb .breadcrumb-separator {
   text-indent: -9999px;
