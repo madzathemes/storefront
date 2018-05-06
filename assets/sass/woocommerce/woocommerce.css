@@ -1438,7 +1438,7 @@ dl.variation dd {
 
 .woocommerce-ordering select {
     padding: 5px 0px 5px 0px;
-    width: 130%;
+    width: 100%;
     border: none;
     box-shadow: none;
     background: transparent;
