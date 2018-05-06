@@ -773,8 +773,8 @@ table.cart td.product-remove:after,table.cart td.product-remove:before {
 	color:#b1b1b1
 }
 .woocommerce-cart-form__contents .product-subtotal {
-	font-size: 16px;
-	font-weight: 800;
+	font-size: 18px;
+	font-weight: 600;
 }
 table.cart td.product-remove:after {
 	clear:both;
