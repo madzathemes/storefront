@@ -1897,8 +1897,10 @@ a {
 	 color: white;
 	 border-radius: 20px;
 	 padding: 2px 5px 2px 5px;
-	 margin-left: 5px;
+	 margin-left: 3px;
 	 font-weight: 400!important;
+	 top:-1px;
+	 position: relative;
  }
 
 .flags {
