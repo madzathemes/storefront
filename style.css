@@ -744,7 +744,7 @@ button,input,select,textarea {
 	border-radius:3px
 }
 .added_to_cart.alt,.added_to_cart.cta,.button.alt,.button.cta,button.alt,button.cta,input[type=button].alt,input[type=button].cta,input[type=reset].alt,input[type=reset].cta,input[type=submit].alt,input[type=submit].cta {
-	background-color:#2c2d33;
+	background-color:#FF5722;
 	border-color:#2c2d33
 }
 .added_to_cart.alt:hover,.added_to_cart.cta:hover,.button.alt:hover,.button.cta:hover,button.alt:hover,button.cta:hover,input[type=button].alt:hover,input[type=button].cta:hover,input[type=reset].alt:hover,input[type=reset].cta:hover,input[type=submit].alt:hover,input[type=submit].cta:hover {
