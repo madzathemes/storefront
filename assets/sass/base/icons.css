@@ -2603,7 +2603,7 @@ a.remove {
   text-indent: -9999px;
   position: relative; }
   a.remove:before {
-    content: "\e924";
+    content: "\e923";
     display: inline-block;
     font: normal normal normal 14px/1 LiamDecoFonts;
     font-size: inherit;

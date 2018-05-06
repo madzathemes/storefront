@@ -506,7 +506,7 @@ table caption {
 	font-weight:600
 }
 table td,table th {
-	padding:1em 1.41575em;
+	padding:1em 0;
 	text-align:left;
 	vertical-align:top
 }
@@ -1959,4 +1959,61 @@ a,
 }
 .wmc-current-currency .flags {
 	margin-right: 6px;
+}
+
+.woocommerce-cart .entry-content .woocommerce>form {
+	width: 60%;
+  float: left;
+  margin-bottom: 100px;
+}
+.woocommerce-cart .entry-content .woocommerce .cart-collaterals {
+    width: 35.8%;
+    float: right;
+    padding: 0;
+    margin-bottom: 40px;
+		background: #f5f5f5;
+}
+.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after, .custom_border:before, .custom_border:after, .woocommerce-order-pay #order_review:before, .woocommerce-order-pay #order_review:after {
+    background-image: radial-gradient(closest-side, transparent 9px, rgba(84,84,84,0.05) 100%);
+}
+.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after, .custom_border:before, .custom_border:after, .woocommerce-order-pay #order_review:before, .woocommerce-order-pay #order_review:after {
+    background-image: radial-gradient(closest-side, transparent 9px, rgba(84,84,84,0.05) 100%);
+}
+.woocommerce-cart .cart-collaterals:after {
+    bottom: -10px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    position: relative;
+}
+.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    background-position: 0 10px, 40px 40px;
+}
+
+.woocommerce .cart-collaterals::after, .woocommerce-page .cart-collaterals::after {
+    clear: both;
+}
+.woocommerce .cart-collaterals::after, .woocommerce .cart-collaterals::before, .woocommerce-page .cart-collaterals::after, .woocommerce-page .cart-collaterals::before {
+    content: ' ';
+    display: table;
+}
+.woocommerce-cart .cart-collaterals:before {
+    margin-top: -10px;
+}
+.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    background-position: 0 10px, 40px 40px;
 }
