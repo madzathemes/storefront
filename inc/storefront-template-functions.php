@@ -976,8 +976,7 @@ function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
     $viewed_products = ! empty( $_COOKIE['woocommerce_recently_viewed'] ) ? (array) explode( '|', $_COOKIE['woocommerce_recently_viewed'] ) : array();
     $viewed_products = array_filter( array_map( 'absint', $viewed_products ) );
     // If no data, quit
-    if ( empty( $viewed_products ) )
-        return __( 'You have not viewed any product yet!', 'rc_wc_rvp' );
+
     // Create the object
     ob_start();
     // Get products per page
