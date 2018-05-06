@@ -1871,7 +1871,8 @@ a,
 	 -moz-transform: translate(-20px,0); /** Firefox **/
  }
 .storefront-more-button {}
-.storefront-smartmenu-button {
+.storefront-smartmenu-button,
+.storefront-product-section .add_to_cart_button {
 	display: none;
 }
 .woocommerce-mini-cart__buttons .checkout {
