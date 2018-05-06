@@ -1866,7 +1866,7 @@ a {
 	 -o-transform: translate(-20px,0); /** Opera **/
 	 -moz-transform: translate(-20px,0); /** Firefox **/
  }
-.storefront-more-button,
+.storefront-more-button {}
 .storefront-smartmenu-button {
 	display: none;
 }
