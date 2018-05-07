@@ -1488,21 +1488,30 @@ table.variations select {
 		font-size: 14px;
 		z-index: 2;
 		margin-right: 0px;
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0);
 		border: 1px solid #e6e6e6;
 		padding: 8px 16px;
 		border-radius: 2px;
 		cursor: pointer;
 		padding-right: 40px;
+		position: relative;
+		z-index: 1;
 }
 .single_add_to_cart_button {
 	padding: 15px 80px;
 }
-table.variations select::after {
+table.variations .value{
+	position: relative;
+	display: inline-block!important;
+}
+table.variations .value::after {
 	content: '\e905';
-  font: normal normal normal 14px LiamDecoFonts;
-  top: 2px;
-  position: relative;
+	font: normal normal normal 14px LiamDecoFonts;
+	top: 13px;
+	right: 5px;
+	position: absolute;
+	color: #b1b1b1;
+	z-index: 0;
 }
 
 table.variations select:focus {
