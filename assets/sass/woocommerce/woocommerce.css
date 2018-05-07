@@ -664,6 +664,7 @@ a.reset_variations {
 .site-header .mini_cart_item a,
 .site-header .mini_cart_item > span{
 	padding-left: 28px;
+	margin-left: 0px;
 }
 .widget_layered_nav li {
 	margin-bottom:.6180469716em;

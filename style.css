@@ -2088,6 +2088,7 @@ body a.reset_variations{
     margin: 0 auto;
     zoom: 1;
     padding-right: 25px;
+		    margin-left: 25px;
     display: inline-block;
     /* Hide buttons for opera */ }
     .woocommerce .quantity input.qty, .woocommerce-page .quantity input.qty {
@@ -2098,6 +2099,7 @@ body a.reset_variations{
       margin: 0;
       text-align: center;
       border: 1px solid #ffffff00;
+			background: #ffffff00;
       border-right: 0;
       font-weight: 700;
       border-radius: 2px 0 0 2px;
@@ -2153,6 +2155,8 @@ body a.reset_variations{
 			z-index: -1;
 			left:-23px;
 		}
+		:focus {outline:none!important;}
+	::-moz-focus-inner {border:0!important;}
 		.woocommerce-mini-cart-item .quantity::after,
 		.woocommerce-mini-cart-item .quantity::before {
 			display: none;
