@@ -788,7 +788,13 @@ table.cart td.product-remove a.remove {
 }
 table.cart td.product-quantity .qty {
 	padding:.326em;
-	width: 45px;
+	width: 55px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+   opacity: 1;
+
 }
 table.cart td,table.cart th {
 	padding:.875em .875em 0;
