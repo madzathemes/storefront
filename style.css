@@ -2063,3 +2063,8 @@ body a.reset_variations{
 	font-size: 21px !important;
 	font-weight: 600 !important
 }
+.product_title.entry-title {
+	font-size: 26px;
+	letter-spacing: -1px;
+	font-weight: 600;
+}
