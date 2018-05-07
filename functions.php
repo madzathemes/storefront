@@ -65,7 +65,13 @@ function move_variations_single_price(){
 add_filter( 'woocommerce_variable_sale_price_html', 'bbloomer_variation_price_format', 10, 2 );
 add_filter( 'woocommerce_variable_price_html', 'bbloomer_variation_price_format', 10, 2 );
 
+
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+    add_image_size( 'medium_324', 324, 9999 );
+}
 function bbloomer_variation_price_format( $price, $product ) {
+
 
 // Main Price
 $prices = array( $product->get_variation_price( 'min', true ), $product->get_variation_price( 'max', true ) );

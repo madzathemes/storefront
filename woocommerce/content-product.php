@@ -46,7 +46,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 global $product;
  	$attachment_ids = $product->get_gallery_image_ids();
  	if (!empty($attachment_ids)) {
- 		?><span class="product_thumbnail_background" style="background-image:url(<?php echo wp_get_attachment_url( $attachment_ids[0], 'thumbnail'); ?>)"></span><?php
+ 		?><span class="product_thumbnail_background" style="background-image:url(<?php echo wp_get_attachment_image_src( $attachment_ids[0], 'medium_324')[0]; ?>)"></span><?php
  	}
 	do_action( 'woocommerce_before_shop_loop_item_title' );
 
