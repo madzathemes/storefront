@@ -1480,6 +1480,7 @@ table.variations select {
 		font-size: 16px;
 		margin-right: 0px;
 		background-color: #fff;
+		background: #fff;
 		border: 1px solid #e6e6e6;
 		padding: 8px 16px;
 		border-radius: 4px;
