@@ -1974,7 +1974,7 @@ body a.reset_variations{
     opacity: .5;
     margin: 0;
 }
-.calculated_shipping .order-total .woocommerce-Price-amount {
+.cart-collaterals .order-total .woocommerce-Price-amount {
 	font-size: 26px;
 	line-height: 1.1;
 }
@@ -2053,12 +2053,13 @@ body a.reset_variations{
     opacity: 1;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #444;
-    line-height: 28px;
-    border-radius: 2px !important;
-    padding: 5px 10px !important;
-    background-color: #f2f2f2;
-    border: solid 2px #e4e4e4;
+.summary.entry-summary {
+
 }
-.select2-container--default .select2-selection--single  { border:none !important; border-radius: 2px !important;}
+.single-product div.product p.price del{
+	font-size: 16px;
+}
+.single-product div.product p.price ins {
+	font-size: 21px !important;
+	font-weight: 600 !important
+}
