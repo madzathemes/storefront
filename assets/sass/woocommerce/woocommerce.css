@@ -417,7 +417,6 @@ ul.products li.product .button {
 	clear:both;
 }
 .single-product div.product .woocommerce-product-rating {
-	margin-bottom:1.618em;
 	margin-top:-.875em;
 }
 .single-product div.product .woocommerce-product-rating:after,.single-product div.product .woocommerce-product-rating:before {
@@ -428,7 +427,7 @@ ul.products li.product .button {
 	clear:both;
 }
 .single-product div.product .woocommerce-product-rating a {
-	font-weight:600;
+	font-weight:400;
 	text-decoration:underline;
 }
 .single-product div.product .woocommerce-product-rating a:hover {
@@ -1206,11 +1205,13 @@ ul.order_details li strong {
 	top:0;
 }
 .star-rating span:before {
-	color:#2c2d33;
+	color:#FFA300;
 	content:"\53\53\53\53\53";
 	left:0;
 	position:absolute;
 	top:0;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 p.stars {
 	display:inline-block;
