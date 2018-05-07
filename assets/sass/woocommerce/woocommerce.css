@@ -1497,6 +1497,7 @@ table.variations select {
 }
 .single_add_to_cart_button {
 	padding: 15px 80px;
+	text-transform: uppercase;
 }
 table.variations .value{
 	position: relative;
