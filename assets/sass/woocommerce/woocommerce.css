@@ -408,7 +408,7 @@ ul.products li.product .button {
 	padding:0;
 }
 .single-product div.product table.variations .value {
-	margin-bottom:1em;
+	margin-bottom:0px;
 }
 .single-product div.product .single_variation .price {
 	display:block;
