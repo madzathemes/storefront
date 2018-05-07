@@ -2069,3 +2069,95 @@ body a.reset_variations{
 	letter-spacing: -1px;
 	font-weight: 600;
 }
+
+/* Cuantity increaser */
+.woocommerce, .woocommerce-page {
+  /**
+   * Quantity inputs
+   */ }
+  .woocommerce #quantity input::-webkit-outer-spin-button,
+  .woocommerce #quantity input::-webkit-inner-spin-button,
+  .woocommerce #content .quantity input::-webkit-outer-spin-button,
+  .woocommerce #content .quantity input::-webkit-inner-spin-button, .woocommerce-page #quantity input::-webkit-outer-spin-button,
+  .woocommerce-page #quantity input::-webkit-inner-spin-button,
+  .woocommerce-page #content .quantity input::-webkit-outer-spin-button,
+  .woocommerce-page #content .quantity input::-webkit-inner-spin-button {
+    display: none; }
+  .woocommerce .quantity, .woocommerce-page .quantity {
+    position: relative;
+    margin: 0 auto;
+    zoom: 1;
+    padding-right: 25px;
+    display: inline-block;
+    /* Hide buttons for opera */ }
+    .woocommerce .quantity input.qty, .woocommerce-page .quantity input.qty {
+			width: 35px;
+    	height: 25px;
+      float: left;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      border: 1px solid #ffffff00;
+      border-right: 0;
+      font-weight: 700;
+      border-radius: 2px 0 0 2px;
+      -moz-appearance: textfield;
+      /* Hide buttons for Firefox 29 and later */ }
+    .woocommerce .quantity noindex:-o-prefocus, .woocommerce .quantity input[type=number], .woocommerce-page .quantity noindex:-o-prefocus, .woocommerce-page .quantity input[type=number] {
+      padding-right: 1.2em; }
+    .woocommerce .quantity .plus,
+    .woocommerce .quantity .minus, .woocommerce-page .quantity .plus,
+    .woocommerce-page .quantity .minus {
+      display: block;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      text-decoration: none;
+      overflow: visible;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+      color: #515151;
+      border: 1px solid #ffffff00;
+      background-color: #ffffff00;
+      text-shadow: none;
+      line-height: 1;
+      background-image: none; text-indent: -9999px }
+      .woocommerce .quantity .plus:hover,
+      .woocommerce .quantity .minus:hover, .woocommerce-page .quantity .plus:hover,
+      .woocommerce-page .quantity .minus:hover {
+        background-color: #ffffff00; }
+    .woocommerce .quantity .plus, .woocommerce-page .quantity .plus {
+      top: 0;
+      right: 0px;
+      border-bottom: 0;
+      border-radius: 0;
+		}
+		.quantity::after {
+			font: normal normal normal 24px LiamDecoFonts;
+			content: "\e927";
+			height: 25px;
+			width: 25px;
+			position: absolute;
+			z-index: -1;
+		}
+		.quantity::before {
+			font: normal normal normal 24px LiamDecoFonts;
+			content: "\e926";
+			height: 25px;
+			width: 25px;
+			position: absolute;
+			z-index: -1;
+			left:-23px;
+		}
+		.woocommerce-mini-cart-item .quantity::after,
+		.woocommerce-mini-cart-item .quantity::before {
+			display: none;
+		}
+    .woocommerce .quantity .minus, .woocommerce-page .quantity .minus {
+      bottom: 0;
+      left: -25px;
+      border-radius: 0 0 2px 2px; }

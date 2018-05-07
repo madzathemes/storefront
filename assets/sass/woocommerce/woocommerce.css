@@ -369,8 +369,8 @@ ul.products li.product .button {
 	clear:both;
 }
 .single-product div.product form.cart {
-	margin-bottom:1.618em;
-	padding:1em 0;
+	margin-bottom:20px;
+	padding:0 0;
 }
 .single-product div.product form.cart:after,.single-product div.product form.cart:before {
 	content:"";
@@ -381,7 +381,11 @@ ul.products li.product .button {
 }
 .single-product div.product form.cart .quantity {
 	float:left;
-	margin-right:.875em;
+	margin-right:0px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 25px;
+	margin-top: 8px;
 }
 .single-product div.product form.cart table.woocommerce-grouped-product-list .woocommerce-grouped-product-list-item__quantity {
 	float:none;
@@ -791,7 +795,7 @@ table.cart td.product-remove a.remove {
 }
 table.cart td.product-quantity .qty {
 	padding:.326em;
-	width:3.706325903em;
+	width: 35px;
 }
 table.cart td,table.cart th {
 	padding:.875em .875em 0;
