@@ -2066,11 +2066,18 @@ body a.reset_variations,
 	font-weight: 600 !important;
 	color: #ff5623;
 }
-.single-quantity {
+.variations {
 	float: left;
-	height: 25px;
-	line-height: 40px;
-	padding-right: 13px;
+	width: 73%;
+}
+.single-quantity-wrap .quantity .qty {
+	width: 100%!important;
+	text-align: left;
+	padding:8px 15px;
+}
+.single-quantity-wrap{
+	width: 25%;
+	float:right;
 }
 .single_add_to_cart_button {
 	width: 100%;

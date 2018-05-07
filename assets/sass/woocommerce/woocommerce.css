@@ -379,14 +379,6 @@ ul.products li.product .button {
 .single-product div.product form.cart:after {
 	clear:both;
 }
-.single-product div.product form.cart .quantity {
-	float:left;
-	margin-right:0px;
-	float: left;
-	margin-right: 20px;
-	margin-left: 25px;
-	margin-top: 8px;
-}
 .single-product div.product form.cart table.woocommerce-grouped-product-list .woocommerce-grouped-product-list-item__quantity {
 	float:none;
 	margin-right:0;
@@ -1281,7 +1273,7 @@ p.stars.selected a:not(.active):before {
 }
 .quantity .qty {
 	text-align:center;
-	width:4.235801032em;
+	width: 55px;
 }
 .storefront-sorting {
 	font-size:.875em;
@@ -1485,24 +1477,22 @@ table.variations select {
 		-moz-appearance: none;
 		-ms-appearance: none;
 		color: #444;
-		font-size: 14px;
-		z-index: 2;
+		font-size: 16px;
 		margin-right: 0px;
-		background-color: rgba(255, 255, 255, 0);
+		background-color: rgba(255, 255, 255);
 		border: 1px solid #e6e6e6;
 		padding: 8px 16px;
-		border-radius: 2px;
+		border-radius: 4px;
 		cursor: pointer;
 		padding-right: 40px;
 		position: relative;
-		z-index: 1;
+		width: 100%;
 }
 .single_add_to_cart_button {
 	padding: 15px 80px;
 }
 table.variations .value{
 	position: relative;
-	display: inline-block!important;
 }
 table.variations .value::after {
 	content: '\e905';
@@ -1511,7 +1501,7 @@ table.variations .value::after {
 	right: 5px;
 	position: absolute;
 	color: #b1b1b1;
-	z-index: 0;
+	z-index: 1;
 }
 
 table.variations select:focus {
@@ -1784,6 +1774,9 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			margin-bottom:3.706325903em;
 			margin-right:0;
 			width:40.5217391304%;
+			background: #f5f5f5;
+    	padding: 40px 40px 20px;
+			border-radius: 4px;
 	}
 	.storefront-full-width-content.single-product div.product .woocommerce-tabs {
 			clear:both;
