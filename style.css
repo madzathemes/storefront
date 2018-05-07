@@ -1877,7 +1877,7 @@ a,
 .storefront-product-section .add_to_cart_button,
 .products .add_to_cart_button,
 .woocommerce-shipping-calculator,
-.reset_variations{
+body a.reset_variations{
 	display: none;
 }
 .card-variations {
