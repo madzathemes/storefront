@@ -2066,6 +2066,16 @@ body a.reset_variations,
 	font-weight: 600 !important;
 	color: #ff5623;
 }
+.single-quantity {
+	float: left;
+	height: 25px;
+	line-height: 40px;
+	padding-right: 13px;
+}
+.single_add_to_cart_button {
+	width: 100%;
+	margin-top: 20px;
+}
 .product_title.entry-title {
 	font-size: 26px;
 	letter-spacing: -1px;

@@ -1484,7 +1484,7 @@ table.variations select {
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		-ms-appearance: none;
-		color: #b1b1b1;
+		color: #444;
 		font-size: 12px;
 		z-index: 2;
 		margin-right: 0px;
@@ -1494,6 +1494,9 @@ table.variations select {
 		border-radius: 2px;
 		cursor: pointer;
 		padding-right: 40px;
+}
+.single_add_to_cart_button {
+	padding: 15px 80px;
 }
 
 table.variations select:focus {
