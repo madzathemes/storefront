@@ -2063,7 +2063,7 @@ body a.reset_variations,
 .single-product div.product p.price ins,
 .single-product div.product p.price > .woocommerce-Price-amount.amount {
 	font-size: 21px !important;
-	font-weight: 600 !important
+	font-weight: 600 !important;
 	color: #ff5623;
 }
 .product_title.entry-title {
