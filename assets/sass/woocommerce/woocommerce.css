@@ -1498,6 +1498,12 @@ table.variations select {
 .single_add_to_cart_button {
 	padding: 15px 80px;
 }
+table.variations select::after {
+	content: '\e905';
+  font: normal normal normal 14px LiamDecoFonts;
+  top: 2px;
+  position: relative;
+}
 
 table.variations select:focus {
     outline: none;
