@@ -2145,6 +2145,8 @@ body a.reset_variations{
 			width: 25px;
 			position: absolute;
 			z-index: -1;
+			-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
 		}
 		.quantity::before {
 			font: normal normal normal 24px LiamDecoFonts;
@@ -2154,6 +2156,8 @@ body a.reset_variations{
 			position: absolute;
 			z-index: -1;
 			left:-23px;
+			-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
 		}
 		:focus {outline:none!important;}
 	::-moz-focus-inner {border:0!important;}
