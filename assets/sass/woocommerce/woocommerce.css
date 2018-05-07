@@ -1007,14 +1007,18 @@ form.checkout>.blockUI {
 #payment .place-order {
 	float:none;
 	margin-bottom:0;
-	margin-top:2.617924em;
+	margin-top:0px;
 	padding:1.41575em;
 	width:100%;
 }
 #payment .place-order .button {
-	font-size:1.41575em;
 	white-space:pre-wrap;
 	width:100%;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 2px;
+	padding: 15px;
 }
 table.woocommerce-checkout-review-order-table .product-name {
 	width:300px;
@@ -2118,6 +2122,10 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			background: #f5f5f5;
 			padding: 40px;
 			border-radius: 4px;
+	}
+	.woocommerce-checkout-payment {
+		background: white;
+    border-radius: 4px;
 	}
 	.page-template-template-fullwidth-php #customer_details+#wc_checkout_add_ons {
 			float:right;
