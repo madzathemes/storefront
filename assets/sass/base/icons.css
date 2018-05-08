@@ -2454,8 +2454,10 @@ input[type="submit"].loading,
   padding-left: 2.617924em; }
 
 .storefront-handheld-footer-bar ul li > a:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 LiamDecoFonts;
   font-size: inherit;
   text-rendering: auto;
   position: absolute;
@@ -2464,21 +2466,22 @@ input[type="submit"].loading,
   right: 0;
   bottom: 0;
   text-align: center;
-  line-height: 2.618046972;
+  line-height: 66px;
   font-weight: 400;
-  font-size: 1.618em;
+  font-size: 24px;
   text-indent: 0;
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+color: #333; }
 
 .storefront-handheld-footer-bar ul li.search > a:before {
-  content: "\f002"; }
+  content: "\e91a"; }
 
 .storefront-handheld-footer-bar ul li.my-account > a:before {
-  content: "\f007"; }
+  content: "\e921"; }
 
 .storefront-handheld-footer-bar ul li.cart > a:before {
-  content: "\f291"; }
+  content: "\e91e"; }
 
 .single-product .pswp__button {
   background-color: transparent; }

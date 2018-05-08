@@ -929,12 +929,15 @@ embed,iframe,object,video {
 	display:none
 }
 button.menu-toggle {
+	margin-top:10px;
 	cursor:pointer;
 	text-align:left;
 	float:right;
 	position:relative;
+	color: #333333;
 	border:2px solid transparent;
 	box-shadow:none;
+	background: none;
 	border-radius:2px;
 	background-image:none;
 	padding:.6180469716em .875em .6180469716em 2.617924em;
@@ -943,9 +946,15 @@ button.menu-toggle {
 button.menu-toggle:hover {
 	background-image:none
 }
+button.menu-toggle:hover {
+    border-color: #333333;
+}
 button.menu-toggle span:before {
 	-webkit-transition:all,ease,.2s;
 	transition:all,ease,.2s
+}
+.storefront-handheld-footer-bar ul li.cart .count {
+	background: #ff89be;;
 }
 button.menu-toggle span:before,button.menu-toggle:after,button.menu-toggle:before {
 	content:"";
@@ -955,6 +964,7 @@ button.menu-toggle span:before,button.menu-toggle:after,button.menu-toggle:befor
 	position:absolute;
 	top:50%;
 	left:1em;
+	background: #333333;
 	margin-top:-1px;
 	-webkit-transition:all,ease,.2s;
 	transition:all,ease,.2s;
