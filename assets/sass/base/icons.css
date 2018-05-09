@@ -16,14 +16,14 @@
    font-style: normal;
 
  }
-.fa-icon-shopping-cart {
+.fa-icon-shopping-cart::before {
   display: inline-block;
   font: normal normal normal 14px/1 LiamDecoFonts;
   font-size: inherit;
   text-rendering: auto;
   content: "\e929"; }
 }
-.fa-icon-check {
+.fa-icon-check::before {
   display: inline-block;
   font: normal normal normal 14px/1 LiamDecoFonts;
   font-size: inherit;
