@@ -161,8 +161,7 @@ function get_variation_data_from_variation_id( $item_id ) {
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
-
  function wp_remove_jsandcss() {
-    wp_dequeue_style( 'rs-icon-set-fa-icon' );
+    wp_dequeue_style( 'rs-icon-set-fa-icon-css' );
  }
  add_action( 'wp_print_styles', 'wp_remove_jsandcss', 100 );
