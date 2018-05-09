@@ -84,10 +84,10 @@ input[type="submit"].loading,
   .button.loading:after,
   .added_to_cart.loading:after {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 LiamDecoFonts;
     font-size: inherit;
     text-rendering: auto;
-    content: "\f110";
+    content: "\e911";
     -webkit-animation: fa-spin .75s linear infinite;
             animation: fa-spin .75s linear infinite;
     height: 20px;
