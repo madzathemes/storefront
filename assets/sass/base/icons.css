@@ -184,11 +184,11 @@ color: #333; }
   overflow: hidden; }
   .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:before {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 LiamDecoFonts;
     font-size: inherit;
     text-rendering: auto;
     display: block;
-    content: "\f00e";
+    content: "\e928";
     line-height: 2;
     text-indent: 0; }
   .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger img {
@@ -501,10 +501,10 @@ p.order-again .button:after {
 
 .woocommerce-tabs ul.tabs li:after {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 LiamDecoFonts;
   font-size: inherit;
   text-rendering: auto;
-  content: "\f107";
+  content: "\e906";
   display: block;
   position: absolute;
   top: 50%;
@@ -523,18 +523,18 @@ p.order-again .button:after {
 .wc-forward:after,
 .woocommerce-Button--next:after {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 LiamDecoFonts;
   font-size: inherit;
   text-rendering: auto;
-  content: "\f178";
+  content: "\e906";
   margin-left: 0.5407911001em; }
 
 .woocommerce-Button--previous:before {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 LiamDecoFonts;
   font-size: inherit;
   text-rendering: auto;
-  content: "\f177";
+  content: "\e925";
   margin-right: 0.5407911001em; }
 
 #reviews .commentlist li p.meta .verified {
@@ -758,7 +758,7 @@ a#variations_clear:before {
       text-align: center;
       text-indent: 0; }
   .woocommerce-tabs ul.tabs li:after {
-    content: "\f105"; }
+    content: "\e906"; }
   /**
 	 * Wishlists
 	 */
