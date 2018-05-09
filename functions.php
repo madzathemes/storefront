@@ -163,6 +163,6 @@ function get_variation_data_from_variation_id( $item_id ) {
  */
 
  function wp_remove_jsandcss() {
-    wp_dequeue_style( 'rs-icon-set-fa-icon-' );
+    wp_dequeue_style( 'rs-icon-set-fa-icon' );
  }
  add_action( 'wp_print_styles', 'wp_remove_jsandcss', 100 );
