@@ -28,8 +28,16 @@
   font: normal normal normal 14px/1 LiamDecoFonts;
   font-size: inherit;
   text-rendering: auto;
-  content: "\e91e"; }
+  content: "\e929"; }
 }
+.fa-icon-check {
+  display: inline-block;
+  font: normal normal normal 14px/1 LiamDecoFonts;
+  font-size: inherit;
+  text-rendering: auto;
+  content: "\e904"; }
+}
+
 .site-search .widget_product_search form input[type=search],
 .site-search .widget_product_search form input[type=text] {
   padding-left: 25px; }
