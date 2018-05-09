@@ -10,7 +10,6 @@
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118664792-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
