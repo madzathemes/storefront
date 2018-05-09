@@ -4,7 +4,7 @@ Theme URI:    	https://woocommerce.com/storefront
 Author:         Automattic
 Author URI:     https://woocommerce.com/
 Description:  	Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout & color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love it's lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!
-Version:      	2.2.8
+Version:      	2.2.8.1
 License:      	GNU General Public License v2 or later
 License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  	storefront
@@ -2105,5 +2105,8 @@ body a.reset_variations,
 	background-position: center;
   width: 100%;
   height: 45px;
+	margin-top: 20px;
+}
+.garantee-info {
 	margin-top: 20px;
 }

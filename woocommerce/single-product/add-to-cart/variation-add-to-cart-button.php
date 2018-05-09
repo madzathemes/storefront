@@ -41,4 +41,9 @@ global $product;
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
 
 	<div class="cardsafe-image"></div>
+	<div class="garantee-info">
+<p>We truly believe we make some of the most EPIC products in the world, and we want to make sure we back that up with a risk-free 30-day guarantee.</p>
+
+<p>If you don't have a positive experience for ANY reason, we will do WHATEVER it takes to make sure you are 100% satisfied with your purchase.</p>
+	</div>
 </div>
