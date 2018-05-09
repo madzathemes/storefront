@@ -23,6 +23,13 @@
   font-weight: normal;
   font-style: normal; }
 
+.fa-icon-shopping-cart {
+  display: inline-block;
+  font: normal normal normal 14px/1 LiamDecoFonts;
+  font-size: inherit;
+  text-rendering: auto;
+  content: "\e91e"; }
+}
 .site-search .widget_product_search form input[type=search],
 .site-search .widget_product_search form input[type=text] {
   padding-left: 25px; }
