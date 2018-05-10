@@ -295,13 +295,13 @@ ul.products li.product .button {
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img {
 	transition:all,ease,.2s;
 	webkit-transition:all,ease,.2s;
-	border: 2px solid white;
+	border: 1px solid white;
 }
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img.flex-active {
-	border: 2px solid #ff93c5;
+	border: 1px solid #b2b2b2;
 }
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li:hover img {
-	border: 2px solid #ff93c5;
+	border: 1px solid #b2b2b2;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li {
 	float:left;
