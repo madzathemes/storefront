@@ -1322,11 +1322,11 @@ p.stars.selected a:not(.active):before {
 	margin-bottom:1em;
 }
 .woocommerce-error,.woocommerce-info,.woocommerce-message,.woocommerce-noreviews,p.no-comments {
-	background-color:#0f834d;
-	border-left:.6180469716em solid rgba(0,0,0,.15);
+	background-color:#f6f5f6;
+	border-left:10px solid rgba(0,0,0,.15);
 	border-radius:2px;
 	clear:both;
-	color:#fff;
+	color:#333;
 	margin-bottom:2.617924em;
 	margin-left:0;
 	padding:1em 1.618em;
