@@ -1911,7 +1911,6 @@ body a.reset_variations,
 	 background: black
  }
 .flags {
-     background-image: url('assets/images/currency-flags.png');
      background-repeat: no-repeat;
      display: block;
      margin: 1px 8px 0 0;
