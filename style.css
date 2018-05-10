@@ -2027,9 +2027,7 @@ body a.reset_variations,
 	opacity: 0;
 	display: block;
 	position: absolute;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	background: #f5f5f5;
 
 }
 .woocommerce-loop-product__link {
