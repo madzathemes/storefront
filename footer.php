@@ -34,10 +34,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<scirpt>
-	$("div.lazy, span.lazy, img.lazy").lazyload({
+<script>
+	jQuery("div.lazy, span.lazy, img.lazy").lazyload({
 	    effect : "fadeIn"
 	});
-</scritp>
+</script>
 </body>
 </html>
