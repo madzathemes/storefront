@@ -338,8 +338,8 @@ ul.products li.product .button {
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
 	float:left;
-	margin-right:14.2857142857%;
-	width:8.5714285714%;
+	margin-right:10px;
+	width:15%;
 }
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n) {
 	margin-right:0;
