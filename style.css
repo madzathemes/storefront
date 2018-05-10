@@ -1761,11 +1761,10 @@ a,
      -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
      border-radius: 50px;
-     background-color: #fff;
+     background-color: #f0f0f0;
      color: #858585;
-     border: 0px solid #f0f0f0;
+     border: 1px solid #f0f0f0;
      font-size: 12px;
-		 box-shadow: 0 0px 40px #f0f0f0;
  }
  .single_variation_wrap {
      display: none;
