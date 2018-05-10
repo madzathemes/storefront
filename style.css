@@ -1882,8 +1882,6 @@ body a.reset_variations,
 	opacity: 0.9;
 }
 .paymentscardsimage {
-	background-size: 346px 26px;
-	background-repeat: no-repeat;
 	width: 346px;
 	height: 26px;
 	float:right;
