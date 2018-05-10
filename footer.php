@@ -34,6 +34,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<scirpt>
+	$("div.lazy, img.lazy").lazyload({
+	    effect : "fadeIn"
+	});
+</scritp>
 </body>
 </html>
