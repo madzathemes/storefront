@@ -2076,7 +2076,6 @@ body a.reset_variations,
 	font-weight: 600;
 }
 .cardsafe-image {
-	background-image: url(assets/images/safe_cards.png);
   background-size: contain;
   background-repeat: no-repeat;
 	background-position: center;
