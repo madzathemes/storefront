@@ -129,7 +129,7 @@ if ( ! function_exists( 'storefront_credit' ) ) {
 			<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ) ) ); ?>
 </div>
 
-							<div class="block footer-widget-2 "><div class="paymentscardsimage"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-type="image" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/paymentcardsc.png"/></div></div>
+							<div class="block footer-widget-2 "><div class="paymentscardsimage lazy" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/paymentcardsc.png');"></div></div>
 		</div><!-- .site-info -->
 
 		<?php

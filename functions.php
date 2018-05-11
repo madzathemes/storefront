@@ -161,3 +161,28 @@ function get_variation_data_from_variation_id( $item_id ) {
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+
+
+
+
+
+ add_filter( 'wp_get_attachment_image_attributes', 'gs_change_attachment_image_markup' );
+ /**
+  * Change src and srcset to data-src and data-srcset, and add class 'lazyload'
+  * @param $attributes
+  * @return mixed
+  */
+ function gs_change_attachment_image_markup($attributes){
+
+     if (isset($attributes['src'])) {
+         $attributes['data-original'] = $attributes['src'];
+         $attributes['src']      = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII='; //could add default small image or a base64 encoded small image here
+     }
+     if (isset($attributes['srcset'])) {
+         $attributes['data-srcset'] = $attributes['srcset'];
+         $attributes['srcset'] = '';
+     }
+     $attributes['class'] .= ' lazyload';
+     return $attributes;
+
+ }

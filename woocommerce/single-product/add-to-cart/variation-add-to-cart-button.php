@@ -40,7 +40,7 @@ global $product;
 	<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
 
-	<div class="cardsafe-image"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-type="image" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/safe_cards.png"/></div>
+	<div class="cardsafe-image"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="lazyload"  data-orginal="<?php echo get_template_directory_uri(); ?>/assets/images/safe_cards.png"/></div>
 	<div class="garantee-info">
 <p>We truly believe we make some of the most EPIC products in the world, and we want to make sure we back that up with a risk-free 30-day guarantee.</p>
 
