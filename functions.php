@@ -161,3 +161,36 @@ function get_variation_data_from_variation_id( $item_id ) {
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+
+
+ add_filter( 'woocommerce_checkout_fields' , 'my_override_checkout_fields' );
+
+// Our hooked in function - $fields is passed via the filter!
+function my_override_checkout_fields( $fields ) {
+
+	$fields['billing']['billing_postcode']['label'] = 'Postal Code';
+  $fields['billing']['billing_postcode']['placeholder'] = 'Postal Code';
+
+	$fields['billing']['billing_first_name']['label'] = 'First Name (optional)';
+  $fields['billing']['billing_first_name']['placeholder'] = 'First Name (optional)';
+
+	$fields['billing']['billing_last_name']['label'] = 'Last Name';
+  $fields['billing']['billing_last_name']['placeholder'] = 'Last Name';
+
+	$fields['billing']['billing_address_1']['label'] = 'Address';
+  $fields['billing']['billing_address_1']['placeholder'] = 'Address';
+
+	$fields['billing']['billing_address_2']['label'] = 'Apartment, suite, etc. (optional)';
+  $fields['billing']['billing_address_2']['placeholder'] = 'Apartment, suite, etc. (optional)';
+
+	$fields['billing']['billing_city']['label'] = 'City';
+  $fields['billing']['billing_city']['placeholder'] = 'City';
+
+	$fields['billing']['billing_state']['label'] = 'State';
+  $fields['billing']['billing_state']['placeholder'] = 'State';
+
+	$fields['billing']['billing_email']['label'] = 'Email';
+	$fields['billing']['billing_email']['placeholder'] = 'Email';
+
+	return $fields;
+}

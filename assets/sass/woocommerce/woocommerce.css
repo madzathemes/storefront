@@ -1019,6 +1019,11 @@ form.checkout>.blockUI {
 table.woocommerce-checkout-review-order-table .product-name {
 	width:300px;
 	word-wrap:break-word;
+	padding:0px 0px 10px;
+}
+table.woocommerce-checkout-review-order-table .product-total {
+	word-wrap:break-word;
+	padding:0px 0px 10px;
 }
 .admin-bar .woocommerce-checkout #wc_checkout_add_ons label+br {
 	display:none;
@@ -1139,11 +1144,10 @@ ul.order_details li strong {
 .form-row.create-account label {
 	display:inline-block;
 }
-.form-row.woocommerce-validated input.input-text {
-	box-shadow:inset 2px 0 0 #0f834d;
-}
 .form-row.woocommerce-invalid input.input-text {
-	box-shadow:inset 2px 0 0 #e2401c;
+	border-color: #e32c2b;
+	-webkit-box-shadow: 0 0 0 1px #e32c2b;
+	box-shadow: 0 0 0 1px #e32c2b;
 }
 .form-row-last {
 	margin-right:0!important;
@@ -1376,10 +1380,19 @@ p.stars.selected a:not(.active):before {
 	list-style:none;
 }
 .woocommerce-info,.woocommerce-noreviews,p.no-comments {
-	background-color:#3d9cd2;
+	background-color:#ff89be;
 }
 .woocommerce-error {
-	background-color:#e2401c;
+	background-color: #f6f5f6;
+  color: #e32c2b;
+}
+tr.cart-subtotal td, tr.cart-subtotal th {
+  border-top:1pt solid rgba(175,175,175,0.34);
+	padding-bottom:0px;
+}
+tr.shipping td, tr.shipping th {
+  border-bottom:1pt solid rgba(175,175,175,0.34);
+	padding-top:5px;
 }
 dl.variation {
 	font-size:.875em;
@@ -2064,7 +2077,6 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	}
 	#order_review_heading {
 			margin-bottom:0;
-			padding-bottom:.6180469716em;
 	}
 	.page-template-template-fullwidth-php.woocommerce-order-pay #order_review,.woocommerce-order-pay #order_review {
 			float:none;
@@ -2115,8 +2127,11 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			margin-right:0;
 			width:47.8260869565%;
 			background: #f5f5f5;
-			padding: 40px;
+			padding: 20px 40px 40px;
 			border-radius: 4px;
+	}
+	.page-template-template-fullwidth-php #order_review_heading {
+		padding: 40px 40px 0px;
 	}
 	.woocommerce-checkout-payment {
 		background: white;

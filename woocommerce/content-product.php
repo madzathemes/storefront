@@ -49,6 +49,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
  	/*	?>
 
 		<span class="product_thumbnail_background"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="lazyload" data-src="<?php echo wp_get_attachment_image_src( $attachment_ids[0], 'woocommerce_thumbnail')[0]; ?>"/></span><?php */
+
  	}
 	do_action( 'woocommerce_before_shop_loop_item_title' );
 
