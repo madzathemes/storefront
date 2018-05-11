@@ -176,7 +176,7 @@ function get_variation_data_from_variation_id( $item_id ) {
 
      if (isset($attributes['src'])) {
          $attributes['data-original'] = $attributes['src'];
-         $attributes['src']      = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII='; //could add default small image or a base64 encoded small image here
+         $attributes['src']      = 'data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs='; //could add default small image or a base64 encoded small image here
      }
      if (isset($attributes['srcset'])) {
          $attributes['data-srcset'] = $attributes['srcset'];
