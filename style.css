@@ -2089,3 +2089,8 @@ body a.reset_variations,
 .garantee-info {
 	margin-top: 20px;
 }
+
+.site-header .site-branding img {
+	width: 231px;
+	height: 65px;
+}

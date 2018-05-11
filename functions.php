@@ -180,7 +180,7 @@ function get_variation_data_from_variation_id( $item_id ) {
      }
      if (isset($attributes['srcset'])) {
          $attributes['data-srcset'] = $attributes['srcset'];
-         $attributes['srcset'] = 'data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=';
+         $attributes['srcset'] = '';
      }
      $attributes['class'] .= ' lazyload';
      return $attributes;
