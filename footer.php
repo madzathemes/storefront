@@ -34,5 +34,12 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+jQuery( document ).ready( function( $ ) {
+	jQuery(document).on( 'mouseenter', '.wmc-currency-wrapper', function() {
+		jQuery(document).trigger('customlazyloadxtevent');
+	});
+});
+</script>
 </body>
 </html>
