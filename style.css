@@ -1848,7 +1848,9 @@ a,
  }
  .site-header .site-search,
  .wmc-currency,
- .product_thumbnail_background {
+ .product_thumbnail_background,
+ .address-field label,
+ .address-field input {
    -webkit-transition: all 200ms ease-out!important;
    -moz-transition: all 200ms ease-out!important;
    -ms-transition: all 200ms ease-out!important;
@@ -2096,8 +2098,11 @@ body a.reset_variations,
 }
 
 /* Updated Forms */
-.form-row-wide {
+.form-row {
 	position: relative;
+}
+.form-row .required {
+	display: none;
 }
 #billing_country_field .select2-container .select2-selection--single {
 	height: 44px;
@@ -2110,11 +2115,33 @@ body a.reset_variations,
 	display: block;
 	font-size: 14px;
 	position: absolute;
-	top: 4px;
+	top: 3px;
 	z-index: 1;
 	left: 9px;
 	color: #868686;
+	opacity: 1!important
 }
 #billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow {
  top: 9px;
+}
+
+.value-exists input {
+	padding-top: 23px;
+  font-size: 15px;
+	padding-bottom: 5px;
+}
+.address-field input, .form-row-first input, .form-row-last input, .validate-email input {
+	height: 46px;
+}
+.address-field label, .form-row-first label, .form-row-last label, .validate-email label {
+	position: absolute;
+	top: 3px;
+	left:10px;
+	opacity: 0;
+	color: #868686;
+	font-size: 14px;
+}
+.value-exists label {
+	opacity:1;
+	z-index: 1
 }

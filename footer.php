@@ -39,6 +39,24 @@ jQuery( document ).ready( function( $ ) {
 	jQuery(document).on( 'mouseenter', '.wmc-currency-wrapper', function() {
 		jQuery(document).trigger('customlazyloadxtevent');
 	});
+
+jQuery('input').on('keyup', function() {
+	if (jQuery(this).val() != '') {
+    jQuery(this).closest(".address-field, .form-row-first, .form-row-last, .validate-email").addClass('value-exists');
+  }
+	if (jQuery(this).val() == '') {
+    jQuery(this).closest(".address-field, .form-row-first, .form-row-last, .validate-email").removeClass('value-exists');
+  }
+});
+jQuery('input').each(function(){
+	if (jQuery(this).val() != '') {
+    jQuery(this).closest(".address-field, .form-row-first, .form-row-last, .validate-email").addClass('value-exists');
+  }
+	if (jQuery(this).val() == '') {
+    jQuery(this).closest(".address-field, .form-row-first, .form-row-last, .validate-email").removeClass('value-exists');
+  }
+});
+
 });
 </script>
 </body>
