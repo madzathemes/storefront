@@ -207,3 +207,11 @@ add_filter( 'woocommerce_billing_fields', 'bbloomer_move_checkout_email_field', 
 
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 #add_action( 'woocommerce_after_checkout_form', 'woocommerce_checkout_coupon_form' );
+
+add_filter( 'woocommerce_checkout_fields', 'bbloomer_change_autofocus_checkout_field' );
+
+function bbloomer_change_autofocus_checkout_field( $fields ) {
+$fields['billing']['billing_first_name']['autofocus'] = false;
+$fields['billing']['billing_email']['autofocus'] = true;
+return $fields;
+}
