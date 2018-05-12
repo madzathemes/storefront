@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h3><?php _e( 'Shipping address', 'woocommerce' ); ?></h3>
+		<h3><?php _e( 'Contact information', 'woocommerce' ); ?></h3>
 
 	<?php else : ?>
 

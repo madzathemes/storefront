@@ -194,3 +194,10 @@ function my_override_checkout_fields( $fields ) {
 
 	return $fields;
 }
+
+function bbloomer_move_checkout_email_field( $address_fields ) {
+    $address_fields['billing_email']['priority'] = 1;
+    return $address_fields;
+}
+
+add_filter( 'woocommerce_billing_fields', 'bbloomer_move_checkout_email_field', 10, 1 );

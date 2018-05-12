@@ -2105,14 +2105,16 @@ body a.reset_variations,
 .form-row .required {
 	display: none;
 }
-#billing_country_field .select2-container .select2-selection--single {
-	height: 44px;
+.select2-container,
+.select2-container .select2-selection--single {
+	height: 46px;
 }
-#billing_country_field .select2-container .select2-selection--single .select2-selection__rendered {
+.select2-container .select2-selection--single .select2-selection__rendered {
 	padding-top: 16px;
   font-size: 15px;
 }
-#billing_country_field label {
+#billing_country_field label,
+#billing_state_field label {
 	display: block;
 	font-size: 13px;
 	position: absolute;
@@ -2122,7 +2124,7 @@ body a.reset_variations,
 	color: #868686;
 	opacity: 1!important
 }
-#billing_country_field .select2-container--default .select2-selection--single .select2-selection__arrow {
+.select2-container--default .select2-selection--single .select2-selection__arrow {
  top: 9px;
 }
 
@@ -2131,10 +2133,10 @@ body a.reset_variations,
   font-size: 15px;
 	padding-bottom: 5px;
 }
-.address-field input, .form-row-first input, .form-row-last input, .validate-email input {
+.woocommerce-billing-fields .form-row input {
 	height: 46px;
 }
-.address-field label, .form-row-first label, .form-row-last label, .validate-email label {
+.woocommerce-billing-fields .form-row label {
 	position: absolute;
 	top: 3px;
 	left:10px;
@@ -2142,7 +2144,7 @@ body a.reset_variations,
 	color: #868686;
 	font-size: 13px;
 }
-.value-exists label {
+.woocommerce-billing-fields .value-exists label {
 	opacity:1;
 }
 input:focus, textarea:focus {
@@ -2177,4 +2179,8 @@ input:focus, textarea:focus {
 }
 .woocommerce-billing-fields p {
 	margin-bottom: 16px;
+}
+
+.shipingadress {
+	padding-top: 30px!important;
 }
