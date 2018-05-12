@@ -197,6 +197,9 @@ function my_override_checkout_fields( $fields ) {
 
 function bbloomer_move_checkout_email_field( $address_fields ) {
     $address_fields['billing_email']['priority'] = 1;
+		$address_fields['billing_country']['priority'] = 80;
+		$address_fields['billing_state']['priority'] = 91;
+		$address_fields['billing_postcode']['priority'] = 92;
     return $address_fields;
 }
 

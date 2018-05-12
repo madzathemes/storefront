@@ -2184,3 +2184,15 @@ input:focus, textarea:focus {
 .shipingadress {
 	padding-top: 30px!important;
 }
+
+#billing_country_field,
+#billing_state_field,
+#billing_postcode_field {
+	width: 31.7%;
+	float: left;
+	margin-right: 2.4%;
+	clear: none;
+}
+#billing_postcode_field {
+	margin-right: 0%;
+}
