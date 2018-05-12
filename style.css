@@ -1849,8 +1849,8 @@ a,
  .site-header .site-search,
  .wmc-currency,
  .product_thumbnail_background,
- .address-field label,
- .address-field input {
+ .form-row label,
+ .form-row input {
    -webkit-transition: all 200ms ease-out!important;
    -moz-transition: all 200ms ease-out!important;
    -ms-transition: all 200ms ease-out!important;
@@ -2144,4 +2144,31 @@ body a.reset_variations,
 .value-exists label {
 	opacity:1;
 	z-index: 1
+}
+input:focus {
+	background: white!important;
+	outline: none;
+  border-color: #197bbd;
+  -webkit-box-shadow: 0 0 0 1px #197bbd;
+  box-shadow: 0 0 0 1px #197bbd;
+}
+.product-image-count {
+	width: 65px;
+	float:left;
+	padding-right:10px;
+	position: relative;
+}
+.product-quantity {
+	position: absolute;
+	z-index: 1;
+	background: black;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	right: 5px;
+	top: -7px;
 }
