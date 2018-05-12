@@ -2066,6 +2066,7 @@ body a.reset_variations,
 	width: 100%!important;
 	text-align: left;
 	padding:8px 15px;
+	background: white!important;
 }
 .single-quantity-wrap{
 	width: 25%;
