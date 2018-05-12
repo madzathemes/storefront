@@ -2157,7 +2157,7 @@ input:focus, textarea:focus {
 	padding-right:10px;
 	position: relative;
 }
-.product-quantity {
+.product-image-count .product-quantity {
 	position: absolute;
 	z-index: 1;
 	background: black;
