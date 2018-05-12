@@ -2175,3 +2175,6 @@ input:focus, textarea:focus {
 .form-row.notes label {
 	display: none;
 }
+.woocommerce-billing-fields p {
+	margin-bottom: 16px;
+}
