@@ -2196,3 +2196,6 @@ input:focus, textarea:focus {
 #billing_postcode_field {
 	margin-right: 0%;
 }
+.checkout_coupon input[type=text] {
+	background: white!important;
+}

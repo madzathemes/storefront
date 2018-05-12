@@ -204,3 +204,6 @@ function bbloomer_move_checkout_email_field( $address_fields ) {
 }
 
 add_filter( 'woocommerce_billing_fields', 'bbloomer_move_checkout_email_field', 10, 1 );
+
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+#add_action( 'woocommerce_after_checkout_form', 'woocommerce_checkout_coupon_form' );

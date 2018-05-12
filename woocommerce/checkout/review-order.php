@@ -52,7 +52,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 	</tbody>
 	<tfoot>
+		<tr class="coupon_checkout">
 
+	  <td colspan="2">
+
+	  <?php
+	  if ( ! defined( 'ABSPATH' ) ) {
+	  exit; // Exit if accessed directly
+	  }
+
+	  if ( ! wc_coupons_enabled() ) {
+	  return;
+	  }
+
+	  ?>
+
+	  <form class="checkout_coupon" method="post">
+
+	  <p class="form-row form-row-first">
+	  <input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Discount', 'woocommerce' ); ?>" id="coupon_code" value="" />
+	  </p>
+
+	  <p class="form-row form-row-last">
+	  <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply', 'woocommerce' ); ?>" />
+	  </p>
+
+
+
+	  </form>
+	  </td>
+	  </tr>
 		<tr class="cart-subtotal">
 			<th><?php _e( 'Subtotal', 'woocommerce' ); ?></th>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
