@@ -2113,7 +2113,7 @@ body a.reset_variations,
 }
 #billing_country_field label {
 	display: block;
-	font-size: 14px;
+	font-size: 13px;
 	position: absolute;
 	top: 3px;
 	z-index: 1;
@@ -2139,7 +2139,7 @@ body a.reset_variations,
 	left:10px;
 	opacity: 0;
 	color: #868686;
-	font-size: 14px;
+	font-size: 13px;
 }
 .value-exists label {
 	opacity:1;
