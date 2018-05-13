@@ -35,12 +35,12 @@
 
 <?php wp_footer(); ?>
 <script>
-jQuery( document ).ready( function( $ ) {
+jQuery(document).ready( function( $ ) {
 	jQuery(document).on( 'mouseenter', '.wmc-currency-wrapper', function() {
 		jQuery(document).trigger('customlazyloadxtevent');
 	});
 
-jQuery('input').on('keyup', function() {
+jQuery('.form-row > input').on('keyup', function() {
 	if (jQuery(this).val() != '') {
     jQuery(this).closest(".woocommerce-billing-fields .form-row").addClass('value-exists');
   }
@@ -48,7 +48,7 @@ jQuery('input').on('keyup', function() {
     jQuery(this).closest(".woocommerce-billing-fields .form-row").removeClass('value-exists');
   }
 });
-jQuery('input').each(function(){
+jQuery('.form-row > input').each(function(){
 	if (jQuery(this).val() != '') {
     jQuery(this).closest(".woocommerce-billing-fields .form-row").addClass('value-exists');
   }
@@ -57,9 +57,25 @@ jQuery('input').each(function(){
   }
 });
 
-jQuery('.validate-email').append('<h3 class="shipingadress">Shipping address</h3>');
+jQuery('.form-row.validate-state > input').on('keyup', function() {
+	if (jQuery(this).val() != '') {
+    jQuery(this).closest(".woocommerce-billing-fields .form-row").addClass('value-exists');
+  }
+	if (jQuery(this).val() == '') {
+    jQuery(this).closest(".woocommerce-billing-fields .form-row").removeClass('value-exists');
+  }
+});
+
+jQuery('.form-row .select2').each(function(){
+    jQuery(this).closest(".form-row").addClass('value-select');
+});
+
+
+
+	jQuery('.form-row.validate-email').append('<h3 class="shipingadress">Shipping address</h3>');
 
 });
+
 </script>
 </body>
 </html>

@@ -2113,8 +2113,8 @@ body a.reset_variations,
 	padding-top: 16px;
   font-size: 15px;
 }
-#billing_country_field label,
-#billing_state_field label {
+.value-select label,
+.value-select label {
 	display: block;
 	font-size: 13px;
 	position: absolute;
@@ -2198,4 +2198,7 @@ input:focus, textarea:focus {
 }
 .checkout_coupon input[type=text] {
 	background: white!important;
+}
+.woocommerce-checkout .entry-header {
+	display: none!important
 }
