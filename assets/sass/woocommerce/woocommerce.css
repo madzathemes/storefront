@@ -1851,7 +1851,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			margin-bottom:1.618em;
 	}
 	.storefront-sorting {
-			margin-bottom:2.617924em;
+			margin-bottom:10px;
 	}
 	.storefront-sorting:after,.storefront-sorting:before {
 			content:"";
