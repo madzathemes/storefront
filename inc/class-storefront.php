@@ -232,12 +232,11 @@ if ( ! class_exists( 'Storefront' ) ) :
 			 * Fonts
 			 */
 			$google_fonts = apply_filters( 'storefront_google_font_families', array(
-				'source-sans-pro' => 'Source+Sans+Pro:400,300,600,700,900',
+				'source-sans-pro' => 'Source+Sans+Pro:400,300,600',
 			) );
 
 			$query_args = array(
-				'family' => implode( '|', $google_fonts ),
-				'subset' => urlencode( 'latin,latin-ext' ),
+				'family' => implode( '|', $google_fonts )
 			);
 
 			$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
