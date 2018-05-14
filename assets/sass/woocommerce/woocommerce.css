@@ -1832,8 +1832,9 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	}
 	.storefront-full-width-content.single-product .related ul.products li.product,.storefront-full-width-content.single-product .upsells ul.products li.product {
 			float:left;
-			margin-right:4.347826087%;
-			width:30.4347826087%;
+			margin-right:0;
+			width:25%;
+			padding: 9px;
 	}
 	.storefront-full-width-content .woocommerce-products-header,.storefront-full-width-content.woocommerce-account .entry-header,.storefront-full-width-content.woocommerce-cart .entry-header,.storefront-full-width-content.woocommerce-checkout .entry-header {
 			padding:0 0 11px;
