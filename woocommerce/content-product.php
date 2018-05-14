@@ -43,14 +43,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_thumbnail - 10
 	 */
 
-	 global $product;
- 	$attachment_ids = $product->get_gallery_image_ids();
- 	if (!empty($attachment_ids)) {
+	# global $product;
+ 	#$attachment_ids = $product->get_gallery_image_ids();
+ 	#if (!empty($attachment_ids)) {
  	/*	?>
 
 		<span class="product_thumbnail_background"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="lazyload" data-src="<?php echo wp_get_attachment_image_src( $attachment_ids[0], 'woocommerce_thumbnail')[0]; ?>"/></span><?php */
 
- 	}
+ 	#}
 	do_action( 'woocommerce_before_shop_loop_item_title' );
 
 
@@ -62,7 +62,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
 	#do_action( 'woocommerce_shop_loop_item_title' );
- 	echo '<h3 class="woocommerce-loop-product__title">'.wp_trim_words(get_the_title(), 21, '...').'</h3>';
+ 	echo '<h3 class="woocommerce-loop-product__title">'.mb_strimwidth(get_the_title(), 0, 21, '...').'</h3>';
 	/**
 	 * woocommerce_after_shop_loop_item_title hook.
 	 *
