@@ -172,7 +172,8 @@ table.shop_table_responsive.my_account_orders .order-actions:before {
 ul.products {
 	clear:both;
 	margin-bottom:0;
-	margin-left:0;
+	margin-left:-9px;
+	margin-right: -9px;
 }
 ul.products:after,ul.products:before {
 	content:"";
@@ -1649,8 +1650,9 @@ table.variations select:focus {
 	}
 	.page-template-template-fullwidth-php .site-main .columns-4 ul.products li.product,.page-template-template-homepage-php .site-main .columns-4 ul.products li.product,.storefront-full-width-content .site-main .columns-4 ul.products li.product,  ul.columns-4.products li.product.liamrecent {
 			float:left;
-			margin-right:4.347826087%;
-			width:21.7391304348%;
+			margin-right: 0;
+			width: 25%;
+			padding: 9px;
 	}
 ul.columns-4.products li.product.liamrecent:last-child {
   margin-right:0;
