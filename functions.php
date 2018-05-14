@@ -215,3 +215,9 @@ $fields['billing']['billing_first_name']['autofocus'] = false;
 $fields['billing']['billing_email']['autofocus'] = true;
 return $fields;
 }
+
+function dequeue_my_css() {
+  wp_dequeue_style('a3a3_lazy_load');
+  wp_deregister_style('a3a3_lazy_load');
+}
+add_action('wp_enqueue_scripts','dequeue_my_css', 1 );
