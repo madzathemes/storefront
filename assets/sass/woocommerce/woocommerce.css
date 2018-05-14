@@ -207,6 +207,9 @@ ul.products li.product .woocommerce-loop-product__title,ul.products li.product h
 	font-size:1rem;
 	font-weight:400;
 	margin-bottom:.5407911001em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 ul.products li.product .star-rating {
 	font-size:.875em;
