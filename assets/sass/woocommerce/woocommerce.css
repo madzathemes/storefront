@@ -196,7 +196,7 @@ ul.products li.product .price {
 	color:#43454b;
 	display:block;
 	font-weight:600;
-	margin-bottom:1rem;
+	margin-bottom:5px;
 	font-size: 15px;
 }
 ul.products li.product .price ins {
@@ -216,7 +216,7 @@ ul.products li.product .star-rating {
 }
 ul.products li.product img {
 	display:block;
-	margin:0 auto 1.618em;
+	margin:0 auto 10px;
 }
 ul.products li.product.product-category .woocommerce-loop-category__title,ul.products li.product.product-category h2,ul.products li.product.product-category h3 {
 	font-size:1.1em;
