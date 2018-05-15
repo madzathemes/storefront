@@ -215,3 +215,20 @@ $fields['billing']['billing_first_name']['autofocus'] = false;
 $fields['billing']['billing_email']['autofocus'] = true;
 return $fields;
 }
+
+
+// Change images alt and title tag
+add_filter('wp_get_attachment_image_attributes', 'change_attachement_image_attributes', 20, 2);
+function change_attachement_image_attributes($attr, $attachment) {
+global $post;
+$product = wc_get_product( $post->ID );
+if ($post->post_type == 'product') {
+    $title = $post->post_title;
+    $authortags = strip_tags ($product->get_tags());
+    $editor = $product->get_attribute( 'pa_szerkesztette' );
+
+    $attr['alt'] = $title .' '. $authortags .' '. $editor;
+    $attr['title'] = $title .' '. $authortags .' '. $editor;
+    }
+    return $attr;
+}   
