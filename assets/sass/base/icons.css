@@ -360,12 +360,14 @@ a.remove {
 .woocommerce-pagination .next:after {
   content: "\e906"; }
 
-.woocommerce-breadcrumb .breadcrumb-separator {
+.woocommerce-breadcrumb .breadcrumb-separator,
+.breadcrumb-separator-cat {
   text-indent: -9999px;
   position: relative;
   display: inline-block;
   padding: 0 6.8535260698em; }
-  .woocommerce-breadcrumb .breadcrumb-separator:after {
+  .woocommerce-breadcrumb .breadcrumb-separator:after,
+  .breadcrumb-separator-cat:after {
     display: block;
     display: inline-block;
     font: normal normal normal 14px/1 LiamDecoFonts;
