@@ -62,6 +62,25 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
 	do_action( 'woocommerce_shop_loop_item_title' );
+
+	echo '<div class="list-prod-cat">';
+	$taxonomy = 'product_cat'; //change to your taxonomy name
+
+	// get the term IDs assigned to post.
+	$post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
+	// separator between links
+	$separator = ', ';
+
+	if ( !empty( $post_terms ) && !is_wp_error( $post_terms ) ) {
+
+$term_ids = implode( ',' , $post_terms );
+	$terms = wp_list_categories( 'title_li=&style=none&echo=0&taxonomy=' . $taxonomy . '&include=' . $term_ids );
+	$terms = rtrim( trim(  str_replace( '<br />',  $separator, $terms ) ), $separator );
+
+	// display post categories
+	echo  $terms;
+	}
+	echo '</div>';
  	#echo '<h3 class="woocommerce-loop-product__title">'.mb_strimwidth(get_the_title(), 0, 35, '...').'</h3>';
 	/**
 	 * woocommerce_after_shop_loop_item_title hook.

@@ -2219,6 +2219,9 @@ input:focus, textarea:focus {
     -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
-
+.list-prod-cat a, .list-prod-cat {
+	font-size: 13px;
+	color: #b2b2b2;
+}
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}

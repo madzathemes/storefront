@@ -184,7 +184,7 @@ ul.products li.product {
 	margin-bottom:20px;
 	margin-left:0;
 	position:relative;
-	text-align:center;
+	text-align:left;
 }
 ul.products li.product .star-rating {
 	margin:0 auto .5407911001em;
@@ -206,7 +206,7 @@ ul.products li.product .price ins {
 ul.products li.product .woocommerce-loop-product__title,ul.products li.product h2,ul.products li.product h3 {
 	font-size:1rem;
 	font-weight:400;
-	margin-bottom:.5407911001em;
+	margin-bottom:2px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
