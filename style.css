@@ -2222,6 +2222,9 @@ input:focus, textarea:focus {
 .list-prod-cat a, .list-prod-cat {
 	font-size: 13px;
 	color: #b2b2b2;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}
