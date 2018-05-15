@@ -2214,7 +2214,7 @@ input:focus, textarea:focus {
     -ms-transition: box-shadow 0.2s ease-in-out;
     transition: box-shadow 0.2s ease-in-out;
 }
-.woocommerce-loop-product__link img, .woocommerce-loop-product__link img {
+.woocommerce-loop-product__link:focus img, .woocommerce-loop-product__link:hover img {
     -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
