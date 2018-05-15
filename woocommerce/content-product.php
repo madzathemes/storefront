@@ -69,11 +69,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	// get the term IDs assigned to post.
 	$post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
 	// separator between links
-	$separator = '<span class="bsc."> - </span>';
+	$separator = ' - ';
 
 	if ( !empty( $post_terms ) && !is_wp_error( $post_terms ) ) {
 
-$term_ids = implode( ',' , $post_terms );
+$term_ids = implode( ', ' , $post_terms );
 	$terms = wp_list_categories( 'title_li=&style=none&echo=0&taxonomy=' . $taxonomy . '&include=' . $term_ids );
 	$terms = rtrim( trim(  str_replace( '<br />',  $separator, $terms ) ), $separator );
 
