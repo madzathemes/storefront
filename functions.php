@@ -227,8 +227,8 @@ if ($post->post_type == 'product') {
     $authortags = strip_tags ($product->get_tags());
     $editor = $product->get_attribute( 'pa_szerkesztette' );
 
-    $attr['alt'] = $title .' '. $authortags .' '. $editor;
-    $attr['title'] = $title .' '. $authortags .' '. $editor;
+    $attr['alt'] = $title .' '. $editor;
+    $attr['title'] = $authortags .' '. $editor;
     }
     return $attr;
-}   
+}
