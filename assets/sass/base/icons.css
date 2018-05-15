@@ -361,12 +361,12 @@ a.remove {
   content: "\e906"; }
 
 .woocommerce-breadcrumb .breadcrumb-separator,
-.breadcrumb-separator-cat {
+.b-s {
   text-indent: -9999px;
   position: relative;
   display: inline-block;
   padding: 0 6.8535260698em; }
-  .breadcrumb-separator-cat {
+  .b-s {
     padding: 0 5px;
   display: inline-block;}
   .woocommerce-breadcrumb .breadcrumb-separator:after,
