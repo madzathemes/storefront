@@ -366,6 +366,9 @@ a.remove {
   position: relative;
   display: inline-block;
   padding: 0 6.8535260698em; }
+  .breadcrumb-separator-cat {
+    padding: 0 5px;
+  display: inline-block;}
   .woocommerce-breadcrumb .breadcrumb-separator:after,
   .breadcrumb-separator-cat:after {
     display: block;
