@@ -224,10 +224,10 @@ global $post;
 $product = wc_get_product( $post->ID );
 if ($post->post_type == 'product') {
     $title = $post->post_title;
-    $authortags = strip_tags ($product->get_tags());
+    $authortags = strip_tags (wc_get_product_tag_list($post->ID));
     $editor = $product->get_attribute( 'pa_szerkesztette' );
 
-    $attr['alt'] = $title .' '. $editor;
+    $attr['alt'] = $title .' '.$authortags .' '. $editor;
     $attr['title'] = $authortags .' '. $editor;
     }
     return $attr;
