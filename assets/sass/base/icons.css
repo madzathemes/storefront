@@ -667,7 +667,12 @@ a#variations_clear:before {
     font-size: inherit;
     text-rendering: auto;
     content: "\e905";
-    margin-left: 1em; }
+    position: absolute;
+    top: 25px;}
+    .main-navigation ul.menu > li.menu-item-has-children > a, .main-navigation ul.menu > li.page_item_has_children > a,
+    .main-navigation ul.nav-menu > li.menu-item-has-children > a,
+    .main-navigation ul.nav-menu > li.page_item_has_children > a {
+      padding-right: 25px;}
   .main-navigation ul.menu ul li.menu-item-has-children > a:after, .main-navigation ul.menu ul li.page_item_has_children > a:after,
   .main-navigation ul.nav-menu ul li.menu-item-has-children > a:after,
   .main-navigation ul.nav-menu ul li.page_item_has_children > a:after {
