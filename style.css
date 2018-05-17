@@ -2230,7 +2230,8 @@ input:focus, textarea:focus {
 	white-space: nowrap;
 	overflow: hidden;
 }
-.orderby option[value="price"]{
+.orderby option[value="price"],
+.orderby option[value="price-desc"]{
    display: none;
 }
 .site-footer .sub-menu {
