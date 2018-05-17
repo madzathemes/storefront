@@ -663,10 +663,10 @@ a#variations_clear:before {
   .main-navigation ul.nav-menu > li.menu-item-has-children > a:after,
   .main-navigation ul.nav-menu > li.page_item_has_children > a:after {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 LiamDecoFonts;
     font-size: inherit;
     text-rendering: auto;
-    content: "\f107";
+    content: "\e905";
     margin-left: 1em; }
   .main-navigation ul.menu ul li.menu-item-has-children > a:after, .main-navigation ul.menu ul li.page_item_has_children > a:after,
   .main-navigation ul.nav-menu ul li.menu-item-has-children > a:after,
