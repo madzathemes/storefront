@@ -668,8 +668,8 @@ a#variations_clear:before {
     text-rendering: auto;
     content: "\e905";
     position: absolute;
-    top: 25px;
-    left: 2px; }
+    top: 24px;
+    right: 7px; }
     .main-navigation ul.menu > li.menu-item-has-children > a, .main-navigation ul.menu > li.page_item_has_children > a,
     .main-navigation ul.nav-menu > li.menu-item-has-children > a,
     .main-navigation ul.nav-menu > li.page_item_has_children > a {
