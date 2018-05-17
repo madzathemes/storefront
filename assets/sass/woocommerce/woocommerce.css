@@ -1361,7 +1361,7 @@ p.stars.selected a:not(.active):before {
 	border-radius:0;
 	border-width:0;
 	box-shadow:none;
-	color:#fff;
+	color:#ff93c5;
 	float:right;
 	line-height:1.618;
 	padding:0;
@@ -1369,7 +1369,7 @@ p.stars.selected a:not(.active):before {
 }
 .woocommerce-error .button:hover,.woocommerce-info .button:hover,.woocommerce-message .button:hover,.woocommerce-noreviews .button:hover,p.no-comments .button:hover {
 	background:0 0;
-	color:#fff;
+	color:#ff93c5;
 	opacity:.7;
 }
 .woocommerce-error pre,.woocommerce-info pre,.woocommerce-message pre,.woocommerce-noreviews pre,p.no-comments pre {
