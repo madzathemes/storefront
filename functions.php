@@ -298,3 +298,11 @@ $args = array(
 register_taxonomy( 'sections', 'product', $args );
 register_taxonomy_for_object_type( 'sections', 'product' );
 }
+
+add_filter('woocommerce_get_catalog_ordering_args', 'am_woocommerce_catalog_orderby');
+function am_woocommerce_catalog_orderby( $args ) {
+    $args['meta_key'] = '_price';
+    $args['orderby'] = 'meta_value_num';
+    $args['order'] = 'desc';
+    return $args;
+}
