@@ -2245,12 +2245,11 @@ input:focus, textarea:focus {
 	border-right: 1px solid #e8e8e8;
 	padding: 40px;
 	z-index: 999;
-	height: 100%;
+	height: auto;
 	overflow-y: scroll;
 }
 .content {
 	position: relative;
-	display:flex;
 }
 .smart-menu-widget ul
 
