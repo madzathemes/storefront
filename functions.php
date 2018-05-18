@@ -266,10 +266,10 @@ if ( $terms ) {
 
 					echo '<li class="category">';
 
-							woocommerce_subcategory_thumbnail( $term );
+							#woocommerce_subcategory_thumbnail( $term );
 
 							echo '<h2>';
-									echo '<a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
+									echo 'a <a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
 											echo $term->name;
 									echo '</a>';
 							echo '</h2>';
@@ -283,17 +283,19 @@ if ( $terms ) {
 
 }
 }
-add_action( 'woocommerce_before_shop_loop', 'tutsplus_product_subcategories', 50 );
 
 function tutsplus_product_subcategories2( $args = array() ) {
 	$parentid = get_queried_object_id();
 
+$id = $parentid->parent;
+
 $args = array(
 	'parent' => 0
 );
-
-$terms = get_terms(array('taxonomy' => 'product_cat', 'parent' => 0) );
-
+$category = get_term('product_cat');
+$abc = $category[0]->term_id;
+$terms = get_terms(array('taxonomy' => 'product_cat', 'child_of' => $abc) );
+echo $abc;
 if ( $terms ) {
 
 	echo '<ul class="product-cats">';
@@ -302,10 +304,10 @@ if ( $terms ) {
 
 					echo '<li class="category">';
 
-							woocommerce_subcategory_thumbnail( $term );
+							#woocommerce_subcategory_thumbnail( $term );
 
 							echo '<h2>';
-									echo '<a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
+									echo 'b <a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
 											echo $term->name;
 									echo '</a>';
 							echo '</h2>';
@@ -319,4 +321,3 @@ if ( $terms ) {
 
 }
 }
-add_action( 'woocommerce_before_shop_loop', 'tutsplus_product_subcategories2', 50 );
