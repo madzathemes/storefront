@@ -110,9 +110,9 @@ do_action( 'woocommerce_after_main_content' );
 $cate = get_queried_object();
 $cateID = $cate->term_id;
 if ( has_term_have_children( $cateID) ) {
-	echo "rada visas apakskategorijas";
+	woocommerce_product_subcategories();
 } else {
-	echo "rada visas augshejas";
+	 woocommerce_product_subcategories(); echo "rada visas augshejas";
 }
 
 get_footer( 'shop' );
