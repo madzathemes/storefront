@@ -111,7 +111,7 @@ $cate = get_queried_object();
 $cateID = $cate->term_id;
 if ( has_term_have_children( $cateID) ) {
 	echo "rada visas apakskategorijas";
-} {
+} else {
 	echo "rada visas augshejas";
 }
 
