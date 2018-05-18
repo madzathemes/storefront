@@ -289,10 +289,10 @@ function tutsplus_product_subcategories2( $args = array() ) {
 	$parentid = get_queried_object_id();
 
 $args = array(
-	'parent' => $parentid
+	'parent' => 0
 );
 
-$terms = get_terms( 'product_cat', $args );
+$terms = get_terms( 'product_cat', array('parent' => 0) );
 
 if ( $terms ) {
 

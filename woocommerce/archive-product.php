@@ -112,7 +112,7 @@ $cateID = $cate->term_id;
 if ( has_term_have_children( $cateID) ) {
 	woocommerce_product_subcategories();
 } else {
-	 woocommerce_product_subcategories(0); echo "rada visas augshejas";
+	 woocommerce_product_subcategories2(); echo "rada visas augshejas";
 }
 
 get_footer( 'shop' );
