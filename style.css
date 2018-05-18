@@ -2238,7 +2238,7 @@ input:focus, textarea:focus {
 }
 /*Smart Menu*/
 .smart-menu-widget {
-	position: fixed;
+	position: absolute;
 	top: 200px;
 	left: 0px;
 	width: 300px;
