@@ -2250,6 +2250,7 @@ input:focus, textarea:focus {
 }
 .content {
 	position: relative;
+	display:flex;
 }
 .smart-menu-widget ul
 
