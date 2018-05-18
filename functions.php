@@ -292,7 +292,7 @@ $args = array(
 	'parent' => 0
 );
 
-$terms = get_terms( 'product_cat', array('parent' => 0) );
+$terms = get_terms(array('taxonomy' => 'product_cat', 'parent' => 1) );
 
 if ( $terms ) {
 
