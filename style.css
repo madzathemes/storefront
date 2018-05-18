@@ -2245,7 +2245,7 @@ input:focus, textarea:focus {
 	border-right: 1px solid #e8e8e8;
 	padding: 40px;
 	z-index: 999;
-	height: auto;
+	height: 100%;
 	overflow-y: scroll;
 }
 .smart-menu-widget ul
