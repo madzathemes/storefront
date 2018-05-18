@@ -1215,12 +1215,6 @@ button.menu-toggle:after {
 .widget-area .widget a:not(.button):hover {
 	text-decoration:none
 }
-ul.product-categories li {
-	float: left;
-}
-ul.product-categories li a {
-	background: #f5f5f5;
-}
 @media (min-width:768px) {
 	table.shop_table_responsive tbody tr td,table.shop_table_responsive tbody tr th {
 		text-align:left
@@ -2242,5 +2236,19 @@ input:focus, textarea:focus {
 .site-footer .sub-menu {
 	display:none;
 }
+/*Smart Menu*/
+.smart-menu-widget {
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	width: 300px;
+	border-right: 1px solid #e8e8e8;
+	padding: 40px;
+	z-index: 999;
+	height: auto;
+	overflow-y: scroll;
+}
+.smart-menu-widget ul
+
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}

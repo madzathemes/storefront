@@ -249,75 +249,20 @@ function has_term_have_children( $term_id = '', $taxonomy = 'product_cat' )
     return true;
 }
 
-function tutsplus_product_subcategories( $args = array() ) {
-	$parentid = get_queried_object_id();
+function storefront_x_sidebar_widget_init() {
 
-$args = array(
-	'parent' => $parentid
-);
-
-$terms = get_terms( 'product_cat', $args );
-
-if ( $terms ) {
-
-	echo '<ul class="product-cats">';
-
-			foreach ( $terms as $term ) {
-
-					echo '<li class="category">';
-
-							#woocommerce_subcategory_thumbnail( $term );
-
-							echo '<h2>';
-									echo 'a <a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
-											echo $term->name;
-									echo '</a>';
-							echo '</h2>';
-
-					echo '</li>';
+		register_sidebar( array(
+			'name' => esc_html__( 'Smart Menu Widgets', 'anews'),
+			'id' => 'smart-menu-widget-area',
+			'description' => esc_html__( 'The Smart Menu Widget area' , 'anews'),
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '<div class="clear"></div></div>',
+					'before_title' => '<h2 class="heading"><span>',
+					'after_title' => '</span></h4>',
+		) );
 
 
-	}
-
-	echo '</ul>';
 
 }
-}
 
-function tutsplus_product_subcategories2( $args = array() ) {
-	$parentid = get_queried_object_id();
-
-$id = $parentid->parent;
-
-$args = array(
-	'parent' => 0
-);
-$category = get_term('product_cat');
-$abc = $category[0]->term_id;
-$terms = get_terms(array('taxonomy' => 'product_cat', 'child_of' => $abc) );
-echo $abc;
-if ( $terms ) {
-
-	echo '<ul class="product-cats">';
-
-			foreach ( $terms as $term ) {
-
-					echo '<li class="category">';
-
-							#woocommerce_subcategory_thumbnail( $term );
-
-							echo '<h2>';
-									echo 'b <a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
-											echo $term->name;
-									echo '</a>';
-							echo '</h2>';
-
-					echo '</li>';
-
-
-	}
-
-	echo '</ul>';
-
-}
-}
+add_action( 'widgets_init', 'storefront_x_sidebar_widget_init' );

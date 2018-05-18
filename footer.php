@@ -28,7 +28,13 @@
 
 		</div><!-- .col-full -->
 	</footer><!-- #colophon -->
+<div class="smart-menu-widget"><?php
+	if ( is_active_sidebar( 'smart-menu-widget-area' ) ) {
 
+		dynamic_sidebar( 'smart-menu-widget-area' );
+
+	} ?>
+</div>
 	<?php do_action( 'storefront_after_footer' ); ?>
 
 </div><!-- #page -->

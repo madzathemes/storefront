@@ -226,6 +226,7 @@ a.reset_variations:before {
   .widget_archive ul li,
   .widget_recent_comments ul li,
   .widget_links ul li,
+  .widget_product_categories ul li,
   .widget_layered_nav ul li,
   .widget_layered_nav_filters ul li {
     padding-left: 1.618em; }
@@ -246,16 +247,7 @@ a.reset_variations:before {
       opacity: 0.35;
       margin-left: -6px;
       width: 1em; }
-.widget_product_categories ul li {
-  margin-bottom: 0px;
-}
-.widget_product_categories ul li a {
-  padding: 9px 12px;
-  display: inline-block;
-  margin: 0px 5px 5px 0px;
-  border-radius: 4px;
-}
-.widget_product_categories ul li.current-cat a { padding-left: 20px; }
+      
 .widget_product_categories ul li.current-cat a:before {
   content: "\e90b"; }
 

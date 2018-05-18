@@ -107,12 +107,5 @@ do_action( 'woocommerce_after_main_content' );
  * @hooked woocommerce_get_sidebar - 10
  */
 #do_action( 'woocommerce_sidebar' );
-$cate = get_queried_object();
-$cateID = $cate->term_id;
-if ( has_term_have_children( $cateID) ) {
-	#tutsplus_product_subcategories();
-} else {
-	 #tutsplus_product_subcategories2(); 
-}
 
 get_footer( 'shop' );
