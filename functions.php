@@ -266,3 +266,35 @@ function storefront_x_sidebar_widget_init() {
 }
 
 add_action( 'widgets_init', 'storefront_x_sidebar_widget_init' );
+
+
+add_action( 'init', 'custom_taxonomy_Item' );
+function custom_taxonomy_Item()  {
+$labels = array(
+    'name'                       => 'Sections',
+    'singular_name'              => 'Section',
+    'menu_name'                  => 'Section',
+    'all_items'                  => 'All Items',
+    'parent_item'                => 'Parent Section',
+    'parent_item_colon'          => 'Parent Section:',
+    'new_item_name'              => 'New Section Name',
+    'add_new_item'               => 'Add New Section',
+    'edit_item'                  => 'Edit Section',
+    'update_item'                => 'Update Section',
+    'separate_items_with_commas' => 'Separate Section with commas',
+    'search_items'               => 'Search Sections',
+    'add_or_remove_items'        => 'Add or remove Sections',
+    'choose_from_most_used'      => 'Choose from the most used Sections',
+);
+$args = array(
+    'labels'                     => $labels,
+    'hierarchical'               => true,
+    'public'                     => true,
+    'show_ui'                    => true,
+    'show_admin_column'          => true,
+    'show_in_nav_menus'          => true,
+    'show_tagcloud'              => true,
+);
+register_taxonomy( 'sections', 'product', $args );
+register_taxonomy_for_object_type( 'sections', 'product' );
+}
