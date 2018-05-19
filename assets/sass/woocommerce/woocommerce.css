@@ -1758,8 +1758,8 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	.storefront-full-width-content.single-product div.product .woocommerce-product-gallery {
 			float:left;
 			margin-bottom:3.706325903em;
-			margin-right:4.347826087%;
-			width:55.1304347826%;
+			margin-right:2%;
+			width:55%;
 	}
 	.storefront-full-width-content.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li {
 			float:left;
@@ -1797,7 +1797,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 			float:right;
 			margin-bottom:3.706325903em;
 			margin-right:0;
-			width:40.5217391304%;
+			width:43;
 			background: #f5f5f5;
     	padding: 40px 40px 20px;
 			border-radius: 4px;
