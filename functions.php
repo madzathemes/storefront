@@ -228,7 +228,7 @@ if ($post->post_type == 'product') {
     $editor = $product->get_attribute( 'pa_szerkesztette' );
 
     $attr['alt'] = $title .' '.$authortags .' '. $editor;
-    $attr['title'] = $authortags .' '. $editor;
+    #$attr['title'] = $authortags .' '. $editor;
     }
     return $attr;
 }
