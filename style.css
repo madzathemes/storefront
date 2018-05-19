@@ -2262,6 +2262,13 @@ input:focus, textarea:focus {
 	background: #f5f5f5;
 	display: block;
 }
+.recent-viewed-products {
+	padding-bottom: 40px;
+}
+.recent-viewed-products > h3 {
+	text-align: center;
+	 font-size: 31px;
+}
 
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}
