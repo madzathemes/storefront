@@ -990,7 +990,8 @@ function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
                     'post_status'    => 'publish',
 										'order'   => 'ASC',
                     'post_type'      => 'product',
-                    'post__in'       => $viewed_products
+                    'post__in'       => $viewed_products,
+										'orderby'        => 'rand'
                     );
     // Add meta_query to query args
     $query_args['meta_query'] = array();
