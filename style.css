@@ -330,7 +330,7 @@ body {
 	margin-bottom:0
 }
 .site-header .custom-logo-link img,.site-header .site-logo-anchor img,.site-header .site-logo-link img {
-	max-width:210px
+	max-width: 231px;
 }
 .site-header .widget {
 	margin-bottom:0
@@ -914,13 +914,14 @@ button.menu-toggle {
 	float:right;
 	position:relative;
 	color: #333333;
-	border:2px solid transparent;
+	border:2px solid #333333;
 	box-shadow:none;
 	background: none;
 	border-radius:2px;
 	background-image:none;
 	padding:.6180469716em .875em .6180469716em 2.617924em;
-	font-size:.875em
+	font-size:.875em;
+	border-radius: 5px;
 }
 button.menu-toggle:hover {
 	background-image:none
@@ -1215,7 +1216,16 @@ button.menu-toggle:after {
 .widget-area .widget a:not(.button):hover {
 	text-decoration:none
 }
+.site-header {
+	padding-top: 15px;
+}
+.woo-multi-currency {
+	display: none!important;
+}
 @media (min-width:768px) {
+	.woo-multi-currency {
+		display: inline-block!important;
+	}
 	table.shop_table_responsive tbody tr td,table.shop_table_responsive tbody tr th {
 		text-align:left
 	}
@@ -1230,11 +1240,6 @@ button.menu-toggle:after {
 		margin-right:4.347826087%;
 		clear:both
 	}
-	.site-header .site-branding img {
-		height:auto;
-		max-width:100%;
-		max-height:none
-	}
 	.woocommerce-active .site-header .secondary-navigation {
 		float:right;
 		margin-right:20px
@@ -1247,6 +1252,7 @@ button.menu-toggle:after {
     margin-left: 20px;
 		position: absolute;
 		margin-left: 300px;
+		z-index: 1
 	}
 	.woocommerce-active .site-header .main-navigation {
 		width: auto;
