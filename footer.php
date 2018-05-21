@@ -13,6 +13,7 @@
     #echo do_shortcode("[woocommerce_recently_viewed_products title='Recent Viewed' per_page='8']");
     ?>
 </div> -->
+
 		</div><!-- .col-full -->
 		<div class="smart-menu-widget"><?php
 			if ( is_active_sidebar( 'smart-menu-widget-area' ) ) {
