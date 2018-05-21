@@ -1008,7 +1008,7 @@ function rc_woocommerce_recently_viewed_products( $atts, $content = null ) {
    <!-- //put your theme html loop hare -->
  <li class="product liamrecent">
     <a class="product-picture" href="<?php echo get_post_permalink(); ?>" title="Show details for Watches">
-        <?php echo wp_get_attachment_image( get_the_ID(), $size = 'thumbnail', "", array( "class" => "img-responsive" ) );  ?>
+        <?php echo wp_get_attachment_image( get_the_ID(), 'thumbnail', "", array( "class" => "img-responsive" ) );  ?>
 				<h2><?php the_title()?></h2>
 				<span class="woocommerce-Price-amount amount"><?php global $product; echo $product->get_price_html(); ?></span>
     </a>
