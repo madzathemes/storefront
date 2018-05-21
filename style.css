@@ -2276,5 +2276,8 @@ input:focus, textarea:focus {
 	 font-size: 31px;
 }
 
+img{
+  text-indent:-9999px
+}
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}
