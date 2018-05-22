@@ -2285,16 +2285,33 @@ img{
 	padding: 9px;
 	float: left;
 	border-bottom: 0px solid silver;
+	margin-bottom: 20px;
 }
 .recent-viewed-products .product_list_widget li img {
 	float: none;
 	max-width: 100%;
+	margin-bottom: 10px;
 }
 .recent-viewed-products .product_list_widget {
     clear: both;
     margin-bottom: 0;
     margin-left: -9px;
     margin-right: -9px;
+}
+.recent-viewed-products .product_list_widget .product-title {
+	font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.recent-viewed-products .product_list_widget .amount {
+	font-weight: 600;
+}
+.recent-viewed-products .product_list_widget del .amount {
+	font-weight: normal;
+	opacity: .5;
 }
 
 /* lazyload css */
