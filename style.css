@@ -1753,6 +1753,9 @@ a,
  }
 
  @media (min-width: 768px) {
+	 .recent-viewed-products ul.product_list_widget li {
+	 	width: 25%;
+	}
    .storefront-full-width-content.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
        width: 18.4%;
        float: left;
@@ -2281,7 +2284,7 @@ img{
 }
 
 .recent-viewed-products ul.product_list_widget li {
-	width: 25%;
+	width: 50%;
 	padding: 9px;
 	float: left;
 	border-bottom: 0px solid silver;
