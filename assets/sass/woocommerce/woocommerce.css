@@ -1449,6 +1449,9 @@ dl.variation dd {
 	color: #ff93c5
 }
 @media (min-width:768px) {
+	.woocommerce-ordering select {
+		display: block!important;
+	}
 	.demo_store {
 			bottom:0;
 	}
@@ -2328,6 +2331,7 @@ ul.columns-4.products li.product.liamrecent:last-child {
 		z-index: 2;
 		margin-right: 0px;
 		text-align-last:right;
+		display: none;
 }
 
 .woocommerce-ordering select:focus {
