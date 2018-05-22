@@ -1754,7 +1754,7 @@ a,
 
  @media (min-width: 768px) {
 	 .recent-viewed-products ul.product_list_widget li {
-	 	width: 25%;
+	 	width: 25%!important;
 	}
    .storefront-full-width-content.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
        width: 18.4%;
