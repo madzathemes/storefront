@@ -8,19 +8,17 @@
  */
 
 ?>
-<div class="recent-viewed-products"><h3>Recent Viewed</h3>
-    <?php
-    storefront_recent_viewed_products();
-    ?>
+<div class="recent-viewed-products">
+  <?php
+    if ( is_active_sidebar( 'smart-menu-widget-area' ) ) {
+
+      dynamic_sidebar( 'smart-menu-widget-area' );
+
+    } ?>
 </div>
 
 		</div><!-- .col-full -->
-		<div class="smart-menu-widget"><?php
-			if ( is_active_sidebar( 'smart-menu-widget-area' ) ) {
-
-				dynamic_sidebar( 'smart-menu-widget-area' );
-
-			} ?>
+		<div class="smart-menu-widget">
 		</div>
 	</div><!-- #content -->
 

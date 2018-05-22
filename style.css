@@ -2279,5 +2279,23 @@ input:focus, textarea:focus {
 img{
   text-indent:-9999px
 }
+
+.recent-viewed-products ul.product_list_widget li {
+	width: 25%;
+	padding: 9px;
+	float: left;
+	border-bottom: 0px solid silver;
+}
+.recent-viewed-products .product_list_widget li img {
+	float: none;
+	max-width: 100%;
+}
+.recent-viewed-products .product_list_widget {
+    clear: both;
+    margin-bottom: 0;
+    margin-left: -9px;
+    margin-right: -9px;
+}
+
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}
