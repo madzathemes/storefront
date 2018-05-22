@@ -1074,6 +1074,8 @@ if ( ! function_exists( 'storefront_recent_viewed_products' ) ) {
 				$wp_query = new WP_Query( array(
 									'posts_per_page' => 5,
 									'no_found_rows'  => 1,
+									'order'   => 'DESC',
+									'orderby' => 'modified',
 									'post_status'    => 'publish',
 									'post_type'      => 'product',
 									'post__in'       => $viewed_products,
