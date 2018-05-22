@@ -1222,6 +1222,24 @@ button.menu-toggle:after {
 .woo-multi-currency {
 	display: none!important;
 }
+.woocommerce-active .site-header .site-search {
+	width:420px;
+}
+@media (max-width:1200px) {
+	.woocommerce-active .site-header .site-search {
+		width:300px;
+	}
+}
+@media (max-width:1080px) {
+	.woocommerce-active .site-header .site-search {
+		width:200px;
+	}
+}
+@media (max-width:880px) {
+	.woocommerce-active .site-header .site-search {
+		width:150px;
+	}
+}
 @media (min-width:768px) {
 	.woo-multi-currency {
 		display: inline-block!important;
@@ -1245,7 +1263,6 @@ button.menu-toggle:after {
 		margin-right:20px
 	}
 	.woocommerce-active .site-header .site-search {
-		width:200px;
 		float:left;
 		margin-right:0;
 		clear:none;
