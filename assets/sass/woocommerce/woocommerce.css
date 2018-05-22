@@ -1430,6 +1430,24 @@ dl.variation dd {
 .storefront-product-section:last-child {
 	margin-bottom:0;
 }
+.woocommerce-ordering {
+	overflow: hidden;
+	position: relative;
+}
+.woocommerce-ordering::after{
+	content: '\e905';
+	font: normal normal normal 14px LiamDecoFonts;
+	top: 13px;
+	right: 0px;
+	position: absolute;
+	    color: #b1b1b1;
+	z-index: 1
+}
+.woocommerce-ordering:hover::after,
+.woocommerce-ordering:hover select
+{
+	color: #ff93c5
+}
 @media (min-width:768px) {
 	.demo_store {
 			bottom:0;
@@ -1451,24 +1469,7 @@ dl.variation dd {
 			margin-right:-99em;
 			padding:1.41575em 99em 1.41575em;
 	}
-	.woocommerce-ordering {
-    overflow: hidden;
-		position: relative;
-}
-.woocommerce-ordering::after{
-	content: '\e905';
-	font: normal normal normal 14px LiamDecoFonts;
-	top: 13px;
-	right: 0px;
-	position: absolute;
-	    color: #b1b1b1;
-	z-index: 1
-}
-.woocommerce-ordering:hover::after,
-.woocommerce-ordering:hover select
-{
-	color: #ff93c5
-}
+
 
 
 table.variations select {
@@ -1680,8 +1681,8 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	}
 	.site-main ul.products li.product {
 			float:left;
-			margin-right:5.8823529412%;
-			width:29.4117647059%;
+			margin-right:0;
+			width:25%;
 	}
 	.single-product div.product .images {
 			float:left;
