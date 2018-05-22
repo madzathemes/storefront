@@ -1040,7 +1040,7 @@ if ( ! function_exists( 'storefront_recent_viewed_products' ) ) {
 	 * @since  1.0.0
 	 * @return void
 	 */
-	function storefront_recent_viewed_products( $args ) {
+	function storefront_recent_viewed_products() {
 
 		if ( storefront_is_woocommerce_activated() ) {
 
@@ -1055,26 +1055,50 @@ if ( ! function_exists( 'storefront_recent_viewed_products' ) ) {
 				'columns'  => intval( $args['columns'] ),
 			) ) );
 
-			/**
-			 * Only display the section if the shortcode returns products
-			 */
-			if ( false !== strpos( $shortcode_content, 'product' ) ) {
+			// Get WooCommerce Global
+		global $woocommerce;
 
-				echo '<section class="related storefront-product-section storefront-on-sale-products" aria-label="' . esc_attr__( 'On Sale Products', 'storefront' ) . '">';
+		// Get recently viewed product cookies data
+		$viewed_products = ! empty( $_COOKIE['woocommerce_recently_viewed'] ) ? (array) explode( '|', $_COOKIE['woocommerce_recently_viewed'] ) : array();
+		$viewed_products = array_filter( array_map( 'absint', $viewed_products ) );
 
-				do_action( 'storefront_homepage_before_on_sale_products' );
+		// If no data, quit
+		if ( empty( $viewed_products ) )
+			return __( 'You have not viewed any product yet!', 'ecoSoft' );
 
-				echo '<h2>' . wp_kses_post( $args['title'] ) . '</h2>';
+			// Create the object
+		ob_start();
 
-				do_action( 'storefront_homepage_after_on_sale_products_title' );
+			if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+				global $post, $woocommerce, $product;
+				$wp_query = new WP_Query( array(
+									'posts_per_page' => 5,
+									'no_found_rows'  => 1,
+									'post_status'    => 'publish',
+									'post_type'      => 'product',
+									'post__in'       => $viewed_products,
 
-				echo do_shortcode('[woocommerce_recently_viewed_products]');
 
-				do_action( 'storefront_homepage_after_on_sale_products' );
+				));
+				echo '
+				<div class="widget woocommerce widget_products">
+				<h3 class="eco_viewed_products"><span>Recently viewed products</span></h3>
+				<ul class="product_list_widget">';
+				while ($wp_query->have_posts()) : $wp_query->the_post(); global  $post, $product;?>
+							<li>
+				<a href="<?php echo esc_url( get_permalink( $product->id ) ); ?>" title="<?php echo esc_attr( $product->get_title() ); ?>">
+				<?php echo $product->get_image(); ?>
+				<span class="product-title"><?php echo $product->get_title(); ?></span>
+				</a>
+				<?php if ( ! empty( $show_rating ) ) echo $product->get_rating_html(); ?>
+				<?php echo $product->get_price_html(); ?>
+				</li>
 
-				echo '</section>';
-
-			}
+				<?php
+				endwhile;
+				echo '</ul></div>';
+				wp_reset_query();
+				wp_reset_postdata();
+				}
 		}
 	}
-}

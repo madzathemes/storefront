@@ -8,11 +8,11 @@
  */
 
 ?>
-<!-- <div class="recent-viewed-products"><h3>Recent Viewed</h3>
+<div class="recent-viewed-products"><h3>Recent Viewed</h3>
     <?php
-    #echo do_shortcode("[woocommerce_recently_viewed_products title='Recent Viewed' per_page='8']");
+    storefront_recent_viewed_products();
     ?>
-</div> -->
+</div>
 
 		</div><!-- .col-full -->
 		<div class="smart-menu-widget"><?php
