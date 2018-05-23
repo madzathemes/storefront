@@ -2115,6 +2115,11 @@ body a.reset_variations,
 	margin-top: 20px;
 	font-size: 15px;
 }
+.garantee-info p {
+	background: white;
+	padding: 6px 10px;
+	margin-bottom: 10px;
+}
 
 .site-header .site-branding img {
 	width: 231px;
