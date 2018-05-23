@@ -233,22 +233,6 @@ if ($post->post_type == 'product') {
     return $attr;
 }
 
-function has_term_have_children( $term_id = '', $taxonomy = 'product_cat' )
-{
-    // Check if we have a term value, if not, return false
-    if ( !$term_id )
-        return false;
-
-    // Get term children
-    $term_children = get_term_children( filter_var( $term_id, FILTER_VALIDATE_INT ), filter_var( $taxonomy, FILTER_SANITIZE_STRING ) );
-
-    // Return false if we have an empty array or WP_Error object
-    if ( empty( $term_children ) || is_wp_error( $term_children ) )
-    return false;
-
-    return true;
-}
-
 function storefront_x_sidebar_widget_init() {
 
 		register_sidebar( array(
@@ -260,8 +244,6 @@ function storefront_x_sidebar_widget_init() {
 					'before_title' => '<h2 class="heading"><span>',
 					'after_title' => '</span></h4>',
 		) );
-
-
 
 }
 
