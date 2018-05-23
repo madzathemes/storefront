@@ -1840,7 +1840,9 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	}
 	.storefront-sorting {
 			margin-bottom:10px;
-			clear: both;
+	}
+	.columns-4 > .storefront-sorting {
+		clear: both;
 	}
 	.storefront-sorting:after,.storefront-sorting:before {
 			content:"";
