@@ -45,10 +45,8 @@ global $product;
 
 	<div class="cardsafe-image"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="lazyload"  data-src="<?php echo get_template_directory_uri(); ?>/assets/images/safe_cards.png"/></div>
 	<div class="garantee-info">
-		<p>All prints are lovingly made to order and printed on heavyweight, high quality white archival paper and shipped in sturdy, protective packaging. Frames are not included. </p>
-<p>We truly believe we make some of the most EPIC products in the world, and we want to make sure we back that up with a risk-free 30-day guarantee.</p>
-
-<p>If you don't have a positive experience for ANY reason, we will do WHATEVER it takes to make sure you are 100% satisfied with your purchase.</p>
+		<p>Frames not included. Choose your own style to match your decor.</p>
+		<p>All prints are lovingly made to order and printed on heavyweight, high quality white archival paper and shipped in sturdy, protective packaging.</p>
 
 
 
