@@ -2112,13 +2112,14 @@ body a.reset_variations,
 	display: inline-block;
 }
 .garantee-info {
-	margin-top: 20px;
-	font-size: 15px;
+	margin-top: 30px;
+	font-size: 14px;
 }
 .garantee-info p {
 	background: white;
-	padding: 6px 10px;
+	padding: 7px 11px;
 	margin-bottom: 10px;
+	border-radius: 5px;
 }
 
 .site-header .site-branding img {
