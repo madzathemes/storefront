@@ -2,17 +2,17 @@
 /**
  * Single variation cart button
  *
- * @see 	https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
+ * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.0.0
+ * @version 3.4.0
  */
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+
+defined( 'ABSPATH' ) || exit;
 
 global $product;
 ?>
+
+<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 <div class="single-quantity-wrap">
 	<div class="single-quantity">Quantity</div>
 	<?php
@@ -36,14 +36,21 @@ global $product;
 <div class="woocommerce-variation-add-to-cart variations_button">
 
 	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+
+<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+
 	<input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
 
 	<div class="cardsafe-image"><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="lazyload"  data-src="<?php echo get_template_directory_uri(); ?>/assets/images/safe_cards.png"/></div>
 	<div class="garantee-info">
+		<p>All prints are lovingly made to order and printed on heavyweight, high quality white archival paper and shipped in sturdy, protective packaging. Frames are not included. </p>
 <p>We truly believe we make some of the most EPIC products in the world, and we want to make sure we back that up with a risk-free 30-day guarantee.</p>
 
 <p>If you don't have a positive experience for ANY reason, we will do WHATEVER it takes to make sure you are 100% satisfied with your purchase.</p>
+
+
+
 	</div>
 </div>
