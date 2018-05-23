@@ -1122,12 +1122,12 @@ button.menu-toggle:after {
 	position:absolute!important
 }
 .widget .widget-title,.widget .widgettitle {
-	font-size:1.41575em;
-	letter-spacing:0;
-	border-bottom:1px solid rgba(0,0,0,.05);
-	padding:0 0 1em;
-	margin-bottom:1em;
-	font-weight:300
+	font-size: 18px;
+  letter-spacing: 0px;
+  padding: 0 0 15px;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #555a5f;
 }
 .widget ul {
 	margin-left:0;
