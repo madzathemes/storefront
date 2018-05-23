@@ -65,7 +65,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 	echo '<div class="list-prod-cat">';
 	$taxonomy = 'product_cat'; //change to your taxonomy name
-
+	global $post;
 	// get the term IDs assigned to post.
 	$post_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
 	// separator between links
