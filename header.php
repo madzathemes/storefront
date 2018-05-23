@@ -17,6 +17,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<meta name="p:domain_verify" content="44ac0fc8080368fe1d90e18c03ef6433"/>
 </head>
 
 <body <?php body_class(); ?>>
