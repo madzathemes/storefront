@@ -1922,7 +1922,7 @@ a,
    -o-transition: all 200ms ease-out!important;
    transition: all 200ms ease-out!important;
  }
-.storefront-more-button {}
+.storefront-more-button { display: none; }
 .storefront-smartmenu-button,
 .storefront-product-section .add_to_cart_button,
 .products .add_to_cart_button,
