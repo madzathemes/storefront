@@ -2245,10 +2245,6 @@ ul.columns-4.products li.product.liamrecent:last-child {
 	.addresses header.title h3 {
 			float:left;
 	}
-	.checkout_coupon .form-row-first {
-		width: 70%!important;
-		margin-right: 2%!important;
-	}
 	.form-row-first {
 			clear:both;
 			float:left;
