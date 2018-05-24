@@ -2357,6 +2357,7 @@ img{
 	padding: 12px 20px;
 	font-size: 13px;
 	background: silver;
+	font-weight: normal;
 }
 .form-row .optional {
 	display: none;
