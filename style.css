@@ -1815,7 +1815,24 @@ a,
  .widget_shopping_cart_content .wcppec-cart-widget-button {
    display:none;
  }
-
+ .woocommerce-cart .entry-content .woocommerce .cart-collaterals {
+	 border-radius: 4px;
+ 	 background: #f5f5f5;
+ }
+ @media (min-width: 1068px) {
+	 .woocommerce-cart .entry-content .woocommerce>form {
+	 	width: 63%;
+	   float: left;
+	   margin-bottom: 100px;
+	 }
+	 .woocommerce-cart .entry-content .woocommerce .cart-collaterals {
+	     width: 28.8%;
+	     float: right;
+	     padding: 0;
+	     margin-bottom: 40px;
+	 		background: #f5f5f5;
+	 }
+ }
  @media (min-width: 768px) {
 	 .site-footer {
 	 	padding:40px 0 60px;
@@ -2000,24 +2017,8 @@ body a.reset_variations,
 	font-size: 26px;
 	line-height: 1.1;
 }
-.woocommerce-cart .entry-content .woocommerce>form {
-	width: 63%;
-  float: left;
-  margin-bottom: 100px;
-}
-.woocommerce-cart .entry-content .woocommerce .cart-collaterals {
-    width: 28.8%;
-    float: right;
-    padding: 0;
-    margin-bottom: 40px;
-		background: #f5f5f5;
-}
-.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after, .custom_border:before, .custom_border:after, .woocommerce-order-pay #order_review:before, .woocommerce-order-pay #order_review:after {
-    background-image: radial-gradient(closest-side, transparent 9px, rgba(84,84,84,0.05) 100%);
-}
-.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after, .custom_border:before, .custom_border:after, .woocommerce-order-pay #order_review:before, .woocommerce-order-pay #order_review:after {
-    background-image: radial-gradient(closest-side, transparent 9px, rgba(84,84,84,0.05) 100%);
-}
+
+
 .woocommerce-cart .cart-collaterals:after {
     bottom: -10px;
     transform: rotate(180deg);
@@ -2347,8 +2348,3 @@ img{
 }
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}
-.woocommerce-cart .entry-content .woocommerce>form {
-	width: 100%;
-  float: none;
-  margin-bottom: 100px;
-}

@@ -835,9 +835,6 @@ table.cart td.actions input[name=update_cart]:focus {
 	margin-bottom:1em;
 	text-align:center;
 }
-.wc-proceed-to-checkout .button.checkout-button {
-	font-size:16px;
-}
 .woocommerce-shipping-calculator {
 	margin:0;
 }
@@ -1012,14 +1009,22 @@ form.checkout>.blockUI {
 	padding:1.41575em;
 	width:100%;
 }
-#payment .place-order .button {
-	white-space:pre-wrap;
-	width:100%;
+#payment .place-order .button,
+.wc-proceed-to-checkout .button,
+.widget_shopping_cart .buttons .button,
+.button {
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 12px;
 	letter-spacing: 2px;
+	padding: 13px 20px;
+}
+#payment .place-order .button,
+.wc-proceed-to-checkout .button,
+.widget_shopping_cart .buttons .button {
+	width:100%;
 	padding: 15px;
+	font-size: 13px;
 }
 table.woocommerce-checkout-review-order-table .product-name {
 	width:300px;
