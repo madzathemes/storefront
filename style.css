@@ -1864,6 +1864,8 @@ a,
    }
    .main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
      padding: 20px 10px;
+		 font-weight: 600;
+		 font-size: 14px;
    }
    .site-header-cart .cart-contents {
      padding: 0;
