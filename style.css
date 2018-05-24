@@ -2335,6 +2335,9 @@ img{
 	font-weight: normal;
 	opacity: .5;
 }
+.payment_method_ppec_paypal {
+	display: none;
+}
 
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}
