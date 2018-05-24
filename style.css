@@ -2231,7 +2231,7 @@ input:focus, textarea:focus {
 #billing_postcode_field {
 	margin-right: 0%;
 }
-.checkout_coupon input[type=text] {
+#coupon_code {
 	background: white!important;
 }
 .woocommerce-checkout .entry-header {
