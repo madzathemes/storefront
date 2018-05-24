@@ -1742,6 +1742,7 @@ button.menu-toggle:after {
 		margin-right:1.41575em;
 		padding: 0
 	}
+
 }
 
 
@@ -1776,6 +1777,17 @@ a,
  }
 
  @media (min-width: 768px) {
+	 #billing_country_field,
+ 	#billing_state_field,
+ 	#billing_postcode_field {
+ 		width: 31.7%;
+ 		float: left;
+ 		margin-right: 2.4%;
+ 		clear: none;
+ 	}
+ 	#billing_postcode_field {
+ 		margin-right: 0%;
+ 	}
 	 .recent-viewed-products ul.product_list_widget li {
 	 	width: 25%!important;
 	}
@@ -2163,8 +2175,12 @@ body a.reset_variations,
 .select2-container--default .select2-selection--single .select2-selection__arrow {
  top: 9px;
 }
+.select2-container--default .select2-selection--single {
+	background: rgba(255, 255, 255, 0)!important;
+}
 
-.value-exists input {
+.value-exists input,
+.validate-state input {
 	padding-top: 23px;
   font-size: 15px;
 	padding-bottom: 5px;
@@ -2180,7 +2196,8 @@ body a.reset_variations,
 	color: #868686;
 	font-size: 13px;
 }
-.woocommerce-billing-fields .value-exists label {
+.woocommerce-billing-fields .value-exists label,
+.woocommerce-billing-fields .validate-state label {
 	opacity:1;
 }
 input:focus, textarea:focus {
@@ -2221,17 +2238,7 @@ input:focus, textarea:focus {
 	padding-top: 30px!important;
 }
 
-#billing_country_field,
-#billing_state_field,
-#billing_postcode_field {
-	width: 31.7%;
-	float: left;
-	margin-right: 2.4%;
-	clear: none;
-}
-#billing_postcode_field {
-	margin-right: 0%;
-}
+
 #coupon_code {
 	background: white!important;
 }
@@ -2345,6 +2352,14 @@ img{
 }
 .cupon-last {
 	width: 28%!important;
+}
+.cupon-last .button {
+	padding: 12px 20px;
+	font-size: 13px;
+	background: silver;
+}
+.form-row .optional {
+	display: none;
 }
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}

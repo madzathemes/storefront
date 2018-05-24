@@ -192,6 +192,8 @@ function my_override_checkout_fields( $fields ) {
 	$fields['billing']['billing_email']['label'] = 'Email';
 	$fields['billing']['billing_email']['placeholder'] = 'Email';
 
+	$address_fields['postcode']['label'] = 'Pin Code';
+
 	return $fields;
 }
 
