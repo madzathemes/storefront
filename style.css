@@ -1834,8 +1834,6 @@ a,
  @media (min-width: 1068px) {
 	 .main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
 	    padding: 20px 15px!important;
-	    font-weight: 600;
-	    font-size: 14px;
 		}
 	 .woocommerce-cart .entry-content .woocommerce>form {
 	 	width: 63%;
