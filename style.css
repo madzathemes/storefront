@@ -1863,9 +1863,9 @@ a,
        box-shadow: 0px 10px 15px #f9f9f9;
    }
    .main-navigation ul.menu>li>a, .main-navigation ul.nav-menu>li>a {
-       padding: 20px 5px;
-       font-weight: 600;
-       font-size: 14px;
+     padding: 20px 5px;
+     font-weight: 600;
+     font-size: 14px;
    }
    .site-header-cart .cart-contents {
      padding: 0;
