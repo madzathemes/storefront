@@ -797,7 +797,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 .mc4wp-form {
 	margin-top: 10px;
 }
-.mc4wp-form input {
+.mc4wp-form input[type=text] {
 	background: white;
 }
 textarea {
