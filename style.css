@@ -2347,3 +2347,8 @@ img{
 }
 /* lazyload css */
 .clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#f5f5f5}
+.woocommerce-cart .entry-content .woocommerce>form {
+	width: 100%;
+  float: none;
+  margin-bottom: 100px;
+}
