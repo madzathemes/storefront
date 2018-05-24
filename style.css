@@ -794,6 +794,9 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 	background-color:#e6e5e5;
 	color:#2b2c30
 }
+.mc4wp-form-1 {
+	margin-top: 10px;
+}
 textarea {
 	overflow:auto;
 	padding-left:.875em;
