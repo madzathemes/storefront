@@ -69,11 +69,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	  <form class="checkout_coupon" method="post">
 
-	  <p class="form-row form-row-first">
+	  <p class="form-row form-row-first cupon-first">
 	  <input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Discount', 'woocommerce' ); ?>" id="coupon_code" value="" />
 	  </p>
 
-	  <p class="form-row form-row-last">
+	  <p class="form-row form-row-last cupon-last">
 	  <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply', 'woocommerce' ); ?>" />
 	  </p>
 

@@ -2249,12 +2249,6 @@ ul.columns-4.products li.product.liamrecent:last-child {
 		width: 70%!important;
 		margin-right: 2%!important;
 	}
-	.checkout_coupon .form-row-last {
-		width: 28%!important;
-	}
-	.checkout_coupon .form-row-last .button {
-		width: 100%!important
-	}
 	.form-row-first {
 			clear:both;
 			float:left;
