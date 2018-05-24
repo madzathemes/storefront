@@ -798,7 +798,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 	margin-top: 10px;
 }
 .mc4wp-form input[type=email] {
-	background: white;
+	background: white!important
 }
 textarea {
 	overflow:auto;
