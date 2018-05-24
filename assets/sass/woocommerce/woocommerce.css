@@ -1284,7 +1284,7 @@ p.stars.selected a:not(.active):before {
 	border-radius:100%;
 	color:#fff;
 	display:inline-block;
-	font-size: 16px;
+	font-size: 13px;
 	font-weight:400;
 	margin-bottom:1em;
 	text-transform:uppercase;
@@ -1292,11 +1292,12 @@ p.stars.selected a:not(.active):before {
   top: 0px;
   right: 0px;
 	background: #ff89be;
-height: 50px;
-width: 50px;
-vertical-align: middle;
-text-align: center;
-line-height: 50px;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: 1px;
 }
 .quantity .qty {
 	text-align:center;
