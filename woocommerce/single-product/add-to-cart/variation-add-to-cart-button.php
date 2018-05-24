@@ -47,6 +47,12 @@ global $product;
 	<div class="garantee-info">
 		<p>Frames not included. Choose your own style to match your decor.</p>
 		<p>All prints are lovingly made to order and printed on heavyweight, high quality white archival paper and shipped in sturdy, protective packaging.</p>
+		<p><strong>Estimated shipping times</strong> </br>
+<span>North America:</span> 8-16 business days</br>
+<span>Europe:</span> 5-8 business days</br>
+<span>Australia, New Zealand and Oceania:</span> 10-20 business days</br>
+<span>Asia Pacific:</span> 10-20 business days</br>
+<span>Latin America and the Caribbean:</span> 15-25 business days</p>
 
 
 

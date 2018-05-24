@@ -2149,6 +2149,9 @@ body a.reset_variations,
 	margin-bottom: 10px;
 	border-radius: 5px;
 }
+.garantee-info p span {
+	opacity: 0.6;
+}
 
 .site-header .site-branding img {
 	width: 231px;
