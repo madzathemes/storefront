@@ -1940,6 +1940,9 @@ body a.reset_variations,
 .availability{
 	display: none;
 }
+.storefront-product-section {
+	margin-top: 40px;
+}
 .card-variations {
 	font-size: 14px;
 	color: #b1b1b1;
