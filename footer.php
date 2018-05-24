@@ -67,7 +67,7 @@ jQuery('.form-row > input').each(function(){
   }
 });
 
-jQuery('.form-row.validate-state > input').on('keyup', function() {
+jQuery('.form-row.validate-state > inputs').on('keyup', function() {
 	if (jQuery(this).val() != '') {
     jQuery(this).closest(".woocommerce-billing-fields .form-row").addClass('value-exists');
   }

@@ -2001,23 +2001,14 @@ body a.reset_variations,
 	line-height: 1.1;
 }
 .woocommerce-cart .entry-content .woocommerce>form {
-	width: 63%;
-  float: left;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 .woocommerce-cart .entry-content .woocommerce .cart-collaterals {
-    width: 28.8%;
-    float: right;
     padding: 0;
     margin-bottom: 40px;
 		background: #f5f5f5;
 }
-.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after, .custom_border:before, .custom_border:after, .woocommerce-order-pay #order_review:before, .woocommerce-order-pay #order_review:after {
-    background-image: radial-gradient(closest-side, transparent 9px, rgba(84,84,84,0.05) 100%);
-}
-.woocommerce-cart .cart-collaterals:before, .woocommerce-cart .cart-collaterals:after, .custom_border:before, .custom_border:after, .woocommerce-order-pay #order_review:before, .woocommerce-order-pay #order_review:after {
-    background-image: radial-gradient(closest-side, transparent 9px, rgba(84,84,84,0.05) 100%);
-}
+
 .woocommerce-cart .cart-collaterals:after {
     bottom: -10px;
     transform: rotate(180deg);
