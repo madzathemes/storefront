@@ -294,6 +294,6 @@ function custom_default_catalog_orderby() {
 
 add_filter('woocommerce_sale_flash', 'vs_change_sale_content', 10, 3);
 function vs_change_sale_content($content, $post, $product){
-   $content = '<span class="onsale">'.__( 'Sale', 'woocommerce' ).'</span>';
+   $content = '<span class="onsale">'.__( 'Salez', 'woocommerce' ).'</span>';
    return $content;
 }
