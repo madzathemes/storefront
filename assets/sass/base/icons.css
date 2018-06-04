@@ -247,7 +247,7 @@ a.reset_variations:before {
       opacity: 0.35;
       margin-left: -6px;
       width: 1em; }
-      
+
 .widget_product_categories ul li.current-cat a:before {
   content: "\e90b"; }
 
@@ -666,7 +666,7 @@ a#variations_clear:before {
     content: "\e905";
     position: absolute;
     top: 24px;
-    right: 7px; }
+    right: 0px; }
     .main-navigation ul.menu > li.menu-item-has-children > a, .main-navigation ul.menu > li.page_item_has_children > a,
     .main-navigation ul.nav-menu > li.menu-item-has-children > a,
     .main-navigation ul.nav-menu > li.page_item_has_children > a {
