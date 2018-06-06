@@ -1404,6 +1404,13 @@ tr.cart-subtotal td, tr.cart-subtotal th {
   border-top:1pt solid rgba(175,175,175,0.34);
 	padding-bottom:0px;
 }
+tr.cart-subtotal th, tr.shipping th {
+	font-weight: 400!important;
+	font-size: 14px;
+}
+tr.cart-subtotal td, tr.shipping td {
+	font-weight: 600!important;
+}
 tr.shipping td, tr.shipping th {
   border-bottom:1pt solid rgba(175,175,175,0.34);
 	padding-top:5px;

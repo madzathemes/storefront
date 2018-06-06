@@ -26,6 +26,9 @@
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
+	<?php if(is_checkout()) { ?>
+		<div class="checkout-top-style"></div>
+	<?php } ?>
 	<?php if(!is_checkout()) { ?>
 		<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 			<div class="col-full">
