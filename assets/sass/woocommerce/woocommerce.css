@@ -1467,6 +1467,26 @@ dl.variation dd {
 {
 	color: #ff93c5
 }
+table.variations select {
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		color: #444;
+		font-size: 16px;
+		margin-right: 0px;
+		background-color: #fff;
+		background: #fff;
+		border: 1px solid #e6e6e6;
+		padding: 8px 16px;
+		border-radius: 4px;
+		cursor: pointer;
+		padding-right: 40px;
+		position: relative;
+		width: 100%;
+}
 @media (min-width:768px) {
 	.woocommerce-ordering select {
 		display: block!important;
@@ -1494,26 +1514,7 @@ dl.variation dd {
 
 
 
-table.variations select {
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		-ms-appearance: none;
-		color: #444;
-		font-size: 16px;
-		margin-right: 0px;
-		background-color: #fff;
-		background: #fff;
-		border: 1px solid #e6e6e6;
-		padding: 8px 16px;
-		border-radius: 4px;
-		cursor: pointer;
-		padding-right: 40px;
-		position: relative;
-		width: 100%;
-}
+
 .single_add_to_cart_button {
 	padding: 15px 15px;
 	text-transform: uppercase;
