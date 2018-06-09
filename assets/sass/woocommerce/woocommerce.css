@@ -1487,6 +1487,22 @@ table.variations select {
 		position: relative;
 		width: 100%;
 }
+table.variations .value{
+	position: relative;
+}
+table.variations .value::after {
+	content: '\e905';
+	font: normal normal normal 14px LiamDecoFonts;
+	top: 14px;
+	right: 8px;
+	position: absolute;
+	color: #b1b1b1;
+	z-index: 1;
+}
+
+table.variations select:focus {
+    outline: none;
+}
 @media (min-width:768px) {
 	.woocommerce-ordering select {
 		display: block!important;
@@ -1522,22 +1538,7 @@ table.variations select {
 	font-size: 13px;
 	letter-spacing: 2px;
 }
-table.variations .value{
-	position: relative;
-}
-table.variations .value::after {
-	content: '\e905';
-	font: normal normal normal 14px LiamDecoFonts;
-	top: 14px;
-	right: 8px;
-	position: absolute;
-	color: #b1b1b1;
-	z-index: 1;
-}
 
-table.variations select:focus {
-    outline: none;
-}
 	table.shop_table_responsive thead {
 			display:table-header-group;
 	}
