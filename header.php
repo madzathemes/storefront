@@ -18,6 +18,7 @@
 
 <?php wp_head(); ?>
 <meta name="p:domain_verify" content="44ac0fc8080368fe1d90e18c03ef6433"/>
+<meta name="google-site-verification" content="BrlYAeG3Uwip0riHs91RQYu1UXgIS38hdFl1ddr0Rsw" />
 </head>
 
 <body <?php body_class(); ?>>
